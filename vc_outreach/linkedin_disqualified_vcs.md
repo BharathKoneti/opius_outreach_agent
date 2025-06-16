@@ -54,6 +54,36 @@ This file tracks all LinkedIn VC profiles that have been analyzed and disqualifi
 - **Additional Roles**: Advisor to Stanford Medicine, American Diabetes Association, Society of Physician Entrepreneurs
 - **Notes**: Exclusively biotech/healthcare focused, immunology research background, not relevant for AI/software development tools
 
+### Anup Jacob - Activate Capital
+- **Date Analyzed**: January 27, 2025
+- **Disqualification Reason**: Wrong Sector (climate tech/energy focus vs AI/software)
+- **Position**: Managing Partner at Activate Capital
+- **Connection Degree**: 2nd
+- **Investment Focus**: Climate tech, sustainable investing, energy - "Growth Capital" focused on climate solutions
+- **Recent Activity**: SuperReturn Energy conference, climate impact reports, sustainable investing
+- **Background**: Previous roles at Masdar (sustainable investing), Virgin Green Fund, focus on energy/climate
+- **Notes**: Exclusively climate/energy focused, not relevant for AI/software development tools. **ALREADY CONTACTED** - connection request sent 2025-01-27
+- **Action Required**: Should be added to sent requests file as well
+
+### Dado Banatao - Tallwood Venture Capital
+- **Date Analyzed**: January 27, 2025
+- **Disqualification Reason**: No AI Investment Focus + No Recent Activity
+- **Position**: Managing Partner at Tallwood Venture Capital
+- **Connection Degree**: 3rd+
+- **Investment Focus**: Unknown/Generic VC - No specific AI/software development focus mentioned
+- **Recent Activity**: "Dado hasn't posted yet" - Complete lack of LinkedIn activity
+- **Portfolio Analysis**: Tallwood VC About page shows no AI/software companies, just generic "Venture Capital and Private Equity Principals"
+- **Notes**: No evidence of AI/software investment thesis, no recent posts or activity, generic VC firm description. Does not meet AI investment focus requirements.
+
+### Heath Lukatch - Red Tree Venture Capital
+- **Date Analyzed**: January 27, 2025
+- **Disqualification Reason**: Wrong Sector (biotech focus vs AI/software)
+- **Position**: Founder & Managing Partner at Red Tree Venture Capital
+- **Connection Degree**: 3rd+
+- **Background**: Past Partner and Managing Director at TPG Biotech - clear biotech/healthcare focus
+- **Investment Focus**: Biotech/healthcare based on TPG Biotech background
+- **Notes**: Previous experience at TPG Biotech indicates healthcare/biotech investment focus, not relevant for AI/software development tools
+
 ## Search Patterns to Avoid
 - Transportation/mobility VCs (Trucks VC, automotive focus)
 - Biotech/healthcare-only VCs (cancer therapeutics, medical devices)
@@ -62,7 +92,7 @@ This file tracks all LinkedIn VC profiles that have been analyzed and disqualifi
 - Real estate VCs (proptech only)
 - Consulting firms (not actual VCs)
 
-## Total Disqualified: 4
+## Total Disqualified: 5
 
 ---
 

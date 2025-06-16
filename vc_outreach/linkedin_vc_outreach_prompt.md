@@ -75,10 +75,24 @@ Use LinkedIn search with these terms:
 2. **1st degree connections** (if available)
 3. **3rd+ degree connections** (only if no better options)
 
+**MANDATORY AI/SOFTWARE FOCUS REQUIREMENTS:**
+- **Primary Focus**: Must invest in AI, software development tools, developer infrastructure, or enterprise software
+- **Portfolio Evidence**: Look for AI companies, developer tools, SaaS platforms, or automation software in their portfolio
+- **Recent Activity**: Posts about AI, software development, or tech trends (not climate, biotech, transportation only)
+- **Investment Thesis**: Clear focus on technology/software vs. sector-specific (energy, healthcare, transportation)
+
 **Look for:**
 - "Connect" button (indicates ability to send invitation) - may be under "More" button
 - Relevant titles: General Partner, Managing Partner, Founder, Principal
 - Active VC firms (check recent activity/posts)
+- **AI/Software Investment Indicators**: Portfolio companies like AI startups, developer tools, SaaS platforms, automation software
+
+**IMMEDIATE DISQUALIFICATION CRITERIA:**
+- **Sector-Only Focus**: Climate tech only, biotech only, transportation only, energy only, food/agriculture only
+- **Non-Tech Focus**: Real estate, retail, consumer goods, traditional industries
+- **Wrong Stage**: Pre-seed only or late-stage only (Series C+)
+- **Geographic Constraints**: Only invests outside our target market
+- **Corporate VC**: Internal corporate venture arms (different process)
 
 ### Step 2.5: Check Tracking Files (MANDATORY)
 **BEFORE ANALYZING ANY VC CANDIDATE**: Check these files to avoid duplicate work:
@@ -102,18 +116,20 @@ Use LinkedIn search with these terms:
    - Is their title accurate and current?
    - Are they actually at a VC firm (not just claiming to be)?
    - Check "Experience" section for role duration
-3. **Investment Focus Assessment**:
-   - Read their "About" section for investment thesis
-   - Check if they invest in tech/software companies
-   - Look for AI, developer tools, or relevant sector experience
+3. **AI/SOFTWARE INVESTMENT FOCUS VALIDATION** (CRITICAL):
+   - **Portfolio Analysis**: Click on their company name to check portfolio companies
+   - **Look for AI/Software Companies**: Search for AI startups, developer tools, SaaS platforms, automation software
+   - **Recent Posts**: Check if they post about AI, software development, developer tools, or enterprise software
+   - **Investment Thesis**: Read their "About" section for AI/software investment focus
+   - **Avoid Sector-Only VCs**: If they only post about climate, biotech, transportation, energy - DISQUALIFY
 4. **Firm Validation**:
    - Click on their company name to verify it's a real VC firm
    - Check firm size and investment stage (seed, series A, etc.)
-   - Look for portfolio companies in their posts/activity
+   - **Portfolio Review**: Look for AI/software companies in firm portfolio
 5. **Activity Level**:
    - Check recent posts (last 3 months)
-   - Look for investment announcements or industry commentary
-   - Verify they're actively posting about VC/startup topics
+   - Look for AI/software investment announcements or industry commentary
+   - Verify they're actively posting about VC/startup topics (not just sector-specific)
 6. **Geographic Relevance**:
    - Check their location (SF Bay Area, NYC, etc.)
    - Ensure they invest in US companies if we're US-based
@@ -122,8 +138,9 @@ Use LinkedIn search with these terms:
    - Check if mutual connections are relevant to our industry
 
 **Disqualification Criteria:**
+- **PRIMARY**: No AI/software investment focus (climate only, biotech only, transportation only, etc.)
 - Not currently active in VC role
-- Focus on non-tech sectors (healthcare, energy, etc.)
+- Focus on non-tech sectors (healthcare only, energy only, etc.)
 - Only invests in very early pre-seed or very late stage
 - Located in regions where they don't invest in US companies
 - Inactive LinkedIn profile (no posts in 6+ months)
