@@ -10,7 +10,13 @@ http://localhost:3001/api
 
 ## Authentication
 
-The system uses OAuth 2.0 for LinkedIn integration. Tokens are automatically managed and stored persistently.
+The system uses OAuth 2.0 for social media integrations. Tokens are automatically managed and stored persistently.
+
+**Supported Platforms:**
+- ✅ **LinkedIn** - OpenID Connect with persistent tokens
+- ✅ **Twitter/X** - OAuth 2.0 with PKCE and refresh tokens
+- 🚧 **Reddit** - Coming soon
+- 🚧 **Hacker News** - Coming soon
 
 ## Endpoints
 
@@ -112,6 +118,106 @@ Delete a LinkedIn post.
   "message": "LinkedIn post deleted successfully!",
   "data": {
     "postId": "urn:li:share:1234567890123456789",
+    "deletedAt": "2025-06-16T00:48:22.054Z"
+  }
+}
+```
+
+### Twitter/X OAuth
+
+#### GET /social/oauth/twitter/authorize
+Get Twitter OAuth authorization URL with PKCE.
+
+**Response:**
+```json
+{
+  "success": true,
+  "data": {
+    "authUrl": "https://x.com/i/oauth2/authorize?response_type=code&client_id=...",
+    "platform": "twitter",
+    "state": "random_state_string"
+  }
+}
+```
+
+#### GET /social/oauth/twitter/callback
+OAuth callback endpoint (used by Twitter, not called directly).
+
+**Query Parameters:**
+- `code` - Authorization code from Twitter
+- `state` - State parameter for PKCE security
+
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Twitter connected successfully!",
+  "data": {
+    "platform": "twitter",
+    "profile": {
+      "id": "123456789",
+      "name": "John Doe",
+      "username": "johndoe",
+      "profileImage": "https://pbs.twimg.com/profile_images/..."
+    },
+    "tokenInfo": {
+      "hasAccessToken": true,
+      "hasRefreshToken": true,
+      "expiresIn": 7200,
+      "scope": "tweet.read tweet.write users.read offline.access"
+    }
+  }
+}
+```
+
+### Twitter/X Posts
+
+#### POST /social/twitter/post
+Create a new tweet.
+
+**Request Body:**
+```json
+{
+  "content": "Your tweet content here with #hashtags"
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Twitter post created successfully!",
+  "data": {
+    "postId": "1234567890123456789",
+    "content": "Your tweet content here with #hashtags",
+    "platform": "twitter",
+    "createdAt": "2025-06-16T00:48:15.803Z"
+  }
+}
+```
+
+**Error Response:**
+```json
+{
+  "success": false,
+  "error": "Twitter not connected. Please authenticate first."
+}
+```
+
+#### DELETE /social/twitter/post/:postId
+Delete a tweet.
+
+**URL Parameters:**
+- `postId` - The Twitter post ID (e.g., `1234567890123456789`)
+
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Twitter post deleted successfully!",
+  "data": {
+    "postId": "1234567890123456789",
+    "deleted": true,
     "deletedAt": "2025-06-16T00:48:22.054Z"
   }
 }

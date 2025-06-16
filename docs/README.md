@@ -7,8 +7,14 @@ Welcome to the Outreach Agent documentation. This system provides automated Link
 ### 🚀 Setup & Installation
 - **[Quick Start Guide](./setup/QUICK_START_GUIDE.md)** - Get up and running in 5 minutes
 - **[Complete Setup Guide](./setup/OUTREACH_SETUP_GUIDE.md)** - Detailed installation instructions
+
+#### LinkedIn Integration ✅
 - **[LinkedIn Token Setup](./setup/LINKEDIN_TOKEN_SETUP_GUIDE.md)** - Complete LinkedIn OAuth setup
 - **[LinkedIn Quick Setup](./setup/LINKEDIN_QUICK_SETUP.md)** - Quick LinkedIn integration reference
+
+#### Twitter/X Integration ✅
+- **[Twitter Token Setup](./setup/TWITTER_TOKEN_SETUP_GUIDE.md)** - Complete Twitter OAuth setup
+- **[Twitter Quick Setup](./setup/TWITTER_QUICK_SETUP.md)** - Quick Twitter integration reference
 
 ### 🔌 API Reference
 - **[API Documentation](./api/README.md)** - Complete REST API reference with examples
