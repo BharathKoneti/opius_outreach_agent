@@ -7,6 +7,22 @@
 **Platform**: LinkedIn (using connection invitations with personalized notes)
 **Strategy**: Avoid InMail to save credits, focus on 2nd degree connections for better response rates
 
+## Browser Automation Setup
+**IMPORTANT**: This campaign uses Playwright MCP for browser automation. The AI agent will:
+
+1. **Navigate LinkedIn automatically** using browser automation tools
+2. **Take screenshots** to analyze search results and profiles
+3. **Click elements** to open profiles and send connection requests
+4. **Type messages** automatically using the provided templates
+5. **Track progress** through multiple pages of search results
+
+**Browser Automation Workflow**:
+- Agent will open LinkedIn and navigate to search
+- Systematically analyze each candidate profile
+- Check tracking files before each analysis
+- Send connection requests with personalized notes
+- Update tracking files immediately after each action
+
 ## Campaign Instructions
 
 ### Step 1: Search Strategy

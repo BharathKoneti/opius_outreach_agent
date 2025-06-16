@@ -7,6 +7,22 @@
 **Platform**: LinkedIn (using connection invitations with personalized notes)
 **Strategy**: Avoid InMail to save credits, focus on 2nd degree connections for better response rates
 
+## Browser Automation Setup
+**IMPORTANT**: This campaign uses Playwright MCP for browser automation. The AI agent will:
+
+1. **Navigate LinkedIn automatically** using browser automation tools
+2. **Take screenshots** to analyze search results and profiles
+3. **Click elements** to open profiles and send connection requests
+4. **Type messages** automatically using the provided templates
+5. **Track progress** through multiple pages of search results
+
+**Browser Automation Workflow**:
+- Agent will open LinkedIn and navigate to search
+- Systematically analyze each candidate profile
+- Check tracking files before each analysis
+- Send connection requests with personalized notes
+- Update tracking files immediately after each action
+
 ## Campaign Instructions
 
 ### Step 1: Search Strategy
@@ -27,7 +43,20 @@ Use LinkedIn search with these terms:
 - Relevant titles: General Partner, Managing Partner, Founder, Principal
 - Active VC firms (check recent activity/posts)
 
-### Step 2.5: Profile Vetting Process
+### Step 2.5: Check Tracking Files (MANDATORY)
+**BEFORE ANALYZING ANY VC CANDIDATE**: Check these files to avoid duplicate work:
+
+1. **Check Disqualified VCs**: Open `vc_outreach/linkedin_disqualified_vcs.md`
+   - Search for the candidate's name
+   - If found: Skip this candidate and move to next
+   - If not found: Proceed to profile vetting
+
+2. **Check Sent Requests**: Open `vc_outreach/linkedin_sent_vc_requests.md`
+   - Search for the candidate's name in the quick reference list
+   - If found: Skip this candidate (already contacted)
+   - If not found: Proceed to profile vetting
+
+### Step 2.6: Profile Vetting Process
 **MANDATORY**: Click on each potential target's profile to thoroughly vet them before sending connection requests.
 
 **Profile Vetting Checklist:**
@@ -68,8 +97,12 @@ Use LinkedIn search with these terms:
 - Note any relevant portfolio companies
 - Flag any mutual connections for potential warm introductions
 
+**Update Tracking Files After Vetting**:
+- **If DISQUALIFIED**: Add entry to `linkedin_disqualified_vcs.md` immediately
+- **If QUALIFIED**: Proceed to connection process, then update `linkedin_sent_vc_requests.md`
+
 ### Step 3: Connection Process
-**IMPORTANT**: Only proceed after completing Step 2.5 Profile Vetting
+**IMPORTANT**: Only proceed after completing Step 2.6 Profile Vetting and confirming candidate is not in tracking files
 
 1. Navigate back to search results after profile review
 2. Look for "Connect" button for qualified targets:
@@ -80,6 +113,7 @@ Use LinkedIn search with these terms:
 4. Use the personalized message template below
 5. Send invitation
 6. Confirm "Pending" status appears
+7. **IMMEDIATELY UPDATE**: Add entry to `linkedin_sent_vc_requests.md` with all details
 
 ### Step 4: Message Template
 **Character limit**: 300 characters (aim for 263-268 characters)
@@ -94,9 +128,14 @@ Hi [NAME], at Opius AI we're building autonomous AI agents for software developm
 - Message has generated positive responses in previous campaigns
 
 ### Step 5: Tracking & Documentation
-**MANDATORY**: Create a detailed tracking log for each campaign session.
+**MANDATORY**: Update tracking files throughout the campaign session.
 
-**File Format**: Create a markdown table file named `linkedin_vc_outreach_log_[DATE].md`
+**Primary Tracking Files**:
+1. `linkedin_disqualified_vcs.md` - Add disqualified VCs immediately
+2. `linkedin_sent_vc_requests.md` - Add sent requests immediately
+3. `vc_contacts_log.md` - Main campaign tracking (optional)
+
+**File Format**: Create a markdown table file named `linkedin_vc_outreach_log_[DATE].md` (if additional detailed tracking needed)
 
 **Required tracking fields:**
 - VC Name (First Last)
@@ -121,21 +160,51 @@ Hi [NAME], at Opius AI we're building autonomous AI agents for software developm
 ```
 
 **Documentation Process:**
-1. **Before starting**: Create the tracking file for the session
-2. **During outreach**: Add each VC immediately after sending invitation
-3. **After each VC**: Update status and confirm message was sent
-4. **End of session**: Review and summarize results
-5. **Weekly review**: Check for responses and update statuses
+1. **Before starting**: Check existing tracking files for duplicates
+2. **During analysis**: Add disqualified VCs to `linkedin_disqualified_vcs.md`
+3. **After sending**: Add sent requests to `linkedin_sent_vc_requests.md` immediately
+4. **End of session**: Update `vc_contacts_log.md` with session summary
+5. **Weekly review**: Check for responses and update all tracking files
 
 **File Location**: Save in `/vc_outreach/logs/` directory
+
+## Tracking System Workflow
+
+### File Structure
+```
+vc_outreach/
+├── linkedin_disqualified_vcs.md        # All disqualified VC profiles
+├── linkedin_sent_vc_requests.md        # All sent connection requests  
+├── vc_contacts_log.md                  # Main campaign tracking
+├── linkedin_vc_outreach_prompt.md      # This prompt file
+└── logs/                               # Detailed session logs
+```
+
+### Workflow Steps
+1. **Start Session**: Open both tracking files in separate tabs
+2. **For Each VC Candidate**:
+   - Check `linkedin_disqualified_vcs.md` for their name
+   - Check `linkedin_sent_vc_requests.md` quick reference list
+   - If found in either: Skip candidate
+   - If not found: Proceed with analysis
+3. **After Analysis**:
+   - If disqualified: Add to `linkedin_disqualified_vcs.md`
+   - If qualified and sent: Add to `linkedin_sent_vc_requests.md`
+4. **End Session**: Update `vc_contacts_log.md` with summary
+
+### Quick Reference Format
+- **Disqualified**: Name, Firm, Reason, Date
+- **Sent Requests**: Name, Firm, Status, Response
 
 ## Campaign Execution Tips
 
 ### Best Practices
+- **Check tracking files first**: Always check disqualified and sent request files before analyzing
 - **Quality over quantity**: Focus on relevant, high-quality targets
 - **Systematic approach**: Work through search results methodically
 - **Consistent messaging**: Use the exact template for consistency
-- **Track everything**: Maintain detailed logs for follow-up
+- **Track everything**: Update tracking files immediately during the process
+- **Avoid duplicates**: Never analyze or contact the same VC twice
 
 ### What to Avoid
 - Don't use InMail (saves credits)
