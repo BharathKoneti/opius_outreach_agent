@@ -23,6 +23,44 @@
 - Send connection requests with personalized notes
 - Update tracking files immediately after each action
 
+## Daily Session Tracking
+**MANDATORY**: Maintain a daily log for each session to track progress and ensure accountability.
+
+### Today's Session Log Format
+Create and maintain a daily session summary:
+
+```markdown
+# Today's LinkedIn Founder Outreach Session - [DATE]
+
+## Session Goals
+- Target: [X] new founder contacts
+- Focus: [specific criteria, e.g., funded AI startups, developer tools founders]
+
+## Contacts Made Today
+1. **[Founder Name]** - [Title] at [Company]
+   - Connection Degree: [1st/2nd/3rd+]
+   - Funding Status: [Seed/Series A/Verified/Unverified]
+   - Company Stage: [Early/Growth/Notes]
+   - Message Sent: [Character count]
+   - Status: [Sent/Pending]
+   - Time: [HH:MM]
+
+## Session Statistics
+- **New Contacts Today**: [X]
+- **Total Campaign Contacts**: [X]
+- **Today's Success Rate**: [X]% (connections sent vs. profiles analyzed)
+- **Disqualified Today**: [X]
+- **Session Duration**: [X] minutes
+
+## Key Observations
+- [Notable findings about target quality, response patterns, etc.]
+
+## Next Session Planning
+- [Areas to focus on next time]
+- [Search terms to try]
+- [Connection degree priorities]
+```
+
 ## Campaign Instructions
 
 ### Step 1: Search Strategy
@@ -148,6 +186,7 @@ Use LinkedIn search with these terms:
 5. Send invitation
 6. Confirm "Pending" status appears
 7. **IMMEDIATELY UPDATE**: Add entry to `linkedin_sent_requests.md` with all details
+8. **UPDATE TODAY'S LOG**: Add entry to daily session tracking
 
 ### Step 4: Message Template
 **Character limit**: 300 characters (aim for 260-270 characters)
@@ -173,7 +212,14 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 **Primary Tracking Files**:
 1. `linkedin_disqualified_candidates.md` - Add disqualified candidates immediately
 2. `linkedin_sent_requests.md` - Add sent requests immediately
-3. `linkedin_outreach_tracking.md` - Detailed campaign tracking (optional)
+3. **Daily session log** - Maintain today's progress tracking
+4. `linkedin_outreach_tracking.md` - Detailed campaign tracking (optional)
+
+**Session Workflow**:
+1. **Start Session**: Create today's log entry with goals
+2. **During Session**: Update tracking files after each action
+3. **After Each Contact**: Add entry to today's log
+4. **End Session**: Complete today's log with statistics and observations
 
 **File Format**: Create a markdown table file named `linkedin_founder_outreach_log_[DATE].md` (if additional detailed tracking needed)
 
@@ -220,20 +266,24 @@ founder_outreach/
 ├── linkedin_disqualified_candidates.md    # All disqualified profiles
 ├── linkedin_sent_requests.md              # All sent connection requests  
 ├── linkedin_outreach_tracking.md          # Detailed campaign tracking
-└── linkedin_founder_outreach_prompt.md    # This prompt file
+├── linkedin_founder_outreach_prompt.md    # This prompt file
+├── today_session_log.md                   # Today's session tracking
+└── logs/                                  # Detailed session logs
 ```
 
 ### Workflow Steps
 1. **Start Session**: Open both tracking files in separate tabs
-2. **For Each Candidate**:
+2. **Create Today's Log**: Initialize daily session tracking
+3. **For Each Candidate**:
    - Check `linkedin_disqualified_candidates.md` for their name
    - Check `linkedin_sent_requests.md` quick reference list
    - If found in either: Skip candidate
    - If not found: Proceed with analysis
-3. **After Analysis**:
+4. **After Analysis**:
    - If disqualified: Add to `linkedin_disqualified_candidates.md`
    - If qualified and sent: Add to `linkedin_sent_requests.md`
-4. **End Session**: Update `linkedin_outreach_tracking.md` with summary
+   - Update today's session log
+5. **End Session**: Complete today's log with final statistics
 
 ### Quick Reference Format
 - **Disqualified**: Name, Company, Reason, Date
@@ -243,6 +293,7 @@ founder_outreach/
 
 ### Best Practices
 - **Check tracking files first**: Always check disqualified and sent request files before analyzing
+- **Maintain daily log**: Update today's session log after each contact
 - **Quality over quantity**: Focus on relevant, high-potential targets
 - **Funding verification first**: Always verify external funding status before sending connection requests
 - **Systematic approach**: Work through search results methodically

@@ -5,9 +5,23 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 
 ---
 
-## Quick Reference List (Alphabetical by First Name)
+## Quick Reference List (Most Recent First)
+1. **Aaref Hilaly** - Partner at Bain Capital Ventures - Sent 2025-01-27 - Pending
+2. **Jake Saper** - General Partner at Emergence Capital - Sent 2025-01-27 - Pending
+3. **Nabeel Hyatt** - General Partner at Spark Capital - Sent 2025-01-27 - Pending
+4. **Rick Lewis** - General Partner at USVP - Sent 2025-01-27 - Pending
+5. **Jennifer Vancini** - General Partner at Mighty Capital - Sent 2025-01-27 - Pending
 
 ### A
+- **Aaref Hilaly** - Partner at Bain Capital Ventures
+  - LinkedIn: https://www.linkedin.com/in/aarefhilaly/
+  - Connection: 2nd degree
+  - AI Investment Focus: ⭐⭐⭐⭐⭐ **EXCEPTIONAL** - Portfolio includes Krea.ai ($500M valuation), Decagon (customers: Figma, Notion, Rippling), Contextual AI, EvenUp ($1B+ valuation)
+  - Date Contacted: 2025-01-27
+  - Time: 15:45
+  - Status: **PENDING**
+  - Message: "Hi Aaref, I'm impressed by your AI portfolio - Krea.ai, Decagon, and Contextual AI represent the cutting edge of generative AI. I'm building an AI agent platform and would love to connect with someone who truly understands the space. Best, Bharath" (247 characters)
+  - Notes: Exceptional AI investor with board positions at multiple AI unicorns. Strong mutual connections (Jeb Miller, Oana Olteanu). Very active on LinkedIn with AI-focused posts.
 - **Adam Johnson** - EVP, Venture Capital Practice Leader at Newfront - Sent - PENDING
 - **Ali Rahimi** - General Partner at Thomson Kelvin Capital - Sent (InMail) - PENDING
 - **Andre Bliznyuk** - General Partner at Runa Capital - Sent - PENDING
@@ -28,6 +42,7 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 - **Gianmarco H.** - Technology investor at redalpine - Sent - PENDING
 
 ### J
+- **Jennifer Vancini** - General Partner at Mighty Capital - Sent - PENDING
 - **Jack Helfand** - Founder and Managing Partner at VIVE Capital, LLC - Sent - PENDING
 - **Jacques Benkoski** - General Partner at U.S. Venture Partners - Sent - PENDING
 - **James McKee** - General Partner at Kubera Venture Capital - Sent - PENDING
@@ -39,12 +54,14 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 - **Matthew Nichols** - General Partner at Commerce Ventures - Sent - PENDING
 
 ### N
+- **Nabeel Hyatt** - General Partner at Spark Capital - Sent - PENDING
 - **Natalie Vais** - General Partner at Spark Capital - Sent - PENDING
 
 ### O
 - **Oana Olteanu** - Early Stage VC - Sent - RESPONDED POSITIVELY ✅
 
 ### R
+- **Rick Lewis** - General Partner at U.S. Venture Partners - Sent - PENDING
 - **Ryan Harris** - General Partner at Norwest Venture Partners - Sent - PENDING
 
 ### S
@@ -87,6 +104,9 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 7. **Matt Carbonara** - Angel Investor at Bayesian Ventures - Sent - PENDING
 8. **Daniel Graf** - General Partner at redalpine - Sent - PENDING
 9. **Gianmarco H.** - Technology investor at redalpine - Sent - PENDING
+10. **Jennifer Vancini** - General Partner at Mighty Capital - Sent - PENDING
+11. **Rick Lewis** - General Partner at U.S. Venture Partners - Sent - PENDING
+12. **Nabeel Hyatt** - General Partner at Spark Capital - Sent - PENDING
 
 ### Previously Contacted (Success)
 - **Oana Olteanu** - Early Stage VC - Sent - RESPONDED POSITIVELY ✅
@@ -94,11 +114,20 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 ---
 
 ## Campaign Statistics
-- **Total VCs Contacted**: 24
+- **Total VCs Contacted**: 27
 - **Positive Responses**: 1 (Oana Olteanu)
-- **Response Rate**: 4.2% (1/24)
-- **Pending Responses**: 23
+- **Response Rate**: 3.7% (1/27)
+- **Pending Responses**: 26
 - **Campaign Goal**: 20 VCs (EXCEEDED ✅)
 
 ## Message Template Used
 "Hi [NAME], at Opius AI we're building autonomous AI agents for software development without PMs/engineers. Planning Agent in early access, launching soon. https://opiusai.com/ https://open-vsx.org/extension/opius-ai/opius-planner-cursor Would love to stay connected!" 
+
+### Contact #27: Jake Saper
+- **Position**: General Partner at Emergence Capital
+- **Connection**: 2nd degree
+- **Date Sent**: January 27, 2025
+- **Message**: "Hi Jake! I'm building Opius AI, autonomous agents for software development. Your insights on AI-enabled services and pricing models are spot-on. Would love to connect and share how we're solving the \"Mirage PMF\" challenge you wrote about. Best, Bharath" (252 characters)
+- **Status**: Pending
+- **AI Investment Focus**: ⭐⭐⭐⭐⭐ **EXCEPTIONAL** (AI-enabled services expert, portfolio includes Together.ai, Bland, Unify, Assembled, Ironclad - all AI companies)
+- **Note**: Santi Subotovsky (another Emergence GP) already contacted 
