@@ -31,7 +31,20 @@ Use LinkedIn search with these terms:
 - Active tech companies (check recent activity/posts)
 - Software/AI/developer tools focus
 
-### Step 2.5: Profile Vetting Process
+### Step 2.5: Check Tracking Files (MANDATORY)
+**BEFORE ANALYZING ANY CANDIDATE**: Check these files to avoid duplicate work:
+
+1. **Check Disqualified Candidates**: Open `founder_outreach/linkedin_disqualified_candidates.md`
+   - Search for the candidate's name
+   - If found: Skip this candidate and move to next
+   - If not found: Proceed to profile vetting
+
+2. **Check Sent Requests**: Open `founder_outreach/linkedin_sent_requests.md`
+   - Search for the candidate's name in the quick reference list
+   - If found: Skip this candidate (already contacted)
+   - If not found: Proceed to profile vetting
+
+### Step 2.6: Profile Vetting Process
 **MANDATORY**: Click on each potential target's profile to thoroughly vet them before sending connection requests.
 
 **Profile Vetting Checklist:**
@@ -50,15 +63,15 @@ Use LinkedIn search with these terms:
    - Check company size and funding stage
    - Look for product descriptions or customer testimonials
 5. **FUNDING VERIFICATION (MANDATORY)**:
-   - **Target Only**: Bootstrapped founders OR Seed-funded companies with verified external funding
-   - **Bootstrapped Verification**: Look for mentions of "bootstrapped", "self-funded", "profitable", revenue milestones
-   - **Seed Funding Verification**: Must have verifiable external funding from recognized sources:
+   - **Target Only**: Companies with verified external funding (Seed, Series A, or later)
+   - **Funding Verification Requirements**: Must have verifiable external funding from recognized sources:
      - Check for investor names in LinkedIn posts/about section
      - Look for funding announcements in their activity feed
      - Search for company name + "funding" or "seed round" in recent posts
-     - Verify investor names are real VCs/angels (not friends/family claims)
-     - Look for third-party validation (TechCrunch, press releases, etc.)
-   - **DISQUALIFY**: Companies claiming funding without verification or pre-revenue/pre-product startups
+     - Verify investor names are real VCs/angels with established portfolios
+     - Look for third-party validation (TechCrunch, Crunchbase, press releases, etc.)
+     - Cross-reference with external funding databases (Crunchbase, PitchBook, etc.)
+   - **DISQUALIFY**: Bootstrapped companies, companies claiming funding without verification, or pre-revenue/pre-product startups
 6. **Activity Level**:
    - Check recent posts (last 3 months)
    - Look for product updates, hiring posts, or industry commentary
@@ -77,9 +90,10 @@ Use LinkedIn search with these terms:
 **Disqualification Criteria:**
 - Not currently active in founding/leadership role
 - Focus on non-tech sectors (retail, hospitality, etc.)
+- **Bootstrapped companies** (no external funding validation)
 - **Unverified funding claims** (no external validation of investors/funding)
 - **Pre-revenue/pre-product startups** (too early stage)
-- **Series A+ companies** (likely have established processes, harder to sell to)
+- **Series B+ companies** (likely have established processes, harder to sell to)
 - **"Stealth mode" without funding verification** (could be just ideas)
 - Hardware-only companies with no software component
 - Inactive LinkedIn profile (no posts in 6+ months)
@@ -87,12 +101,13 @@ Use LinkedIn search with these terms:
 - Companies that are clearly not a fit for developer tools
 
 **Funding Verification Methods:**
-1. **LinkedIn Activity**: Recent posts about funding rounds, investor meetings, or revenue milestones
-2. **About Section**: Mentions of specific investors, funding amounts, or bootstrapped status
+1. **LinkedIn Activity**: Recent posts about funding rounds, investor meetings, or funding milestones
+2. **About Section**: Mentions of specific investors, funding amounts, or funding rounds
 3. **Company Page**: Check company LinkedIn page for funding announcements
-4. **Investor Validation**: If investors mentioned, verify they're real VCs/angels with portfolios
-5. **Third-Party Sources**: Look for external press coverage or funding databases
-6. **Revenue Indicators**: For bootstrapped companies, look for hiring posts, office moves, product launches indicating traction
+4. **Investor Validation**: If investors mentioned, verify they're real VCs/angels with established portfolios
+5. **Third-Party Sources**: Cross-reference with Crunchbase, PitchBook, TechCrunch, or other funding databases
+6. **External Validation**: Look for press releases, news articles, or official funding announcements
+7. **Investor Portfolio Check**: Verify mentioned investors have the company listed in their portfolio
 
 **Documentation During Vetting**:
 - Take note of their company's tech stack for potential customization
@@ -100,8 +115,12 @@ Use LinkedIn search with these terms:
 - Flag any mutual connections for potential warm introductions
 - Identify specific pain points they might have mentioned
 
+**Update Tracking Files After Vetting**:
+- **If DISQUALIFIED**: Add entry to `linkedin_disqualified_candidates.md` immediately
+- **If QUALIFIED**: Proceed to connection process, then update `linkedin_sent_requests.md`
+
 ### Step 3: Connection Process
-**IMPORTANT**: Only proceed after completing Step 2.5 Profile Vetting
+**IMPORTANT**: Only proceed after completing Step 2.6 Profile Vetting and confirming candidate is not in tracking files
 
 1. Navigate back to search results after profile review
 2. Look for "Connect" button for qualified targets:
@@ -112,6 +131,7 @@ Use LinkedIn search with these terms:
 4. Use the personalized message template below
 5. Send invitation
 6. Confirm "Pending" status appears
+7. **IMMEDIATELY UPDATE**: Add entry to `linkedin_sent_requests.md` with all details
 
 ### Step 4: Message Template
 **Character limit**: 300 characters (aim for 260-270 characters)
@@ -132,16 +152,21 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 - Choose template based on their company focus
 
 ### Step 5: Tracking & Documentation
-**MANDATORY**: Create a detailed tracking log for each campaign session.
+**MANDATORY**: Update tracking files throughout the campaign session.
 
-**File Format**: Create a markdown table file named `linkedin_founder_outreach_log_[DATE].md`
+**Primary Tracking Files**:
+1. `linkedin_disqualified_candidates.md` - Add disqualified candidates immediately
+2. `linkedin_sent_requests.md` - Add sent requests immediately
+3. `linkedin_outreach_tracking.md` - Detailed campaign tracking (optional)
+
+**File Format**: Create a markdown table file named `linkedin_founder_outreach_log_[DATE].md` (if additional detailed tracking needed)
 
 **Required tracking fields:**
 - Founder Name (First Last)
 - Title
 - Company
-- Funding Status (Bootstrapped/Seed-Verified/Seed-Unverified)
-- Funding Details (Investor names, revenue indicators, or verification source)
+- Funding Status (Seed/Series A/Series B/Unverified)
+- Funding Details (Investor names, funding amount, verification source)
 - LinkedIn Profile URL
 - Connection Degree (1st, 2nd, 3rd+)
 - Date Contacted (YYYY-MM-DD)
@@ -158,29 +183,58 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 ```markdown
 | Founder Name | Title | Company | Funding Status | Funding Details | LinkedIn URL | Connection Degree | Date | Time | Status | Template | Response | Response Notes | Fit | Follow-up | Next Action |
 |--------------|-------|---------|----------------|-----------------|--------------|-------------------|------|------|--------|----------|----------|----------------|-----|-----------|-------------|
-| Sarah Chen | Co-Founder & CTO | DevTools Inc | Seed-Verified | Andreessen Horowitz, $2M seed | linkedin.com/in/sarahchen | 2nd | 2025-01-27 | 14:30 | Pending | Standard | No | - | High | Yes | Wait 1 week |
-| Mike Johnson | Founder & CEO | CodeTools | Bootstrapped | $500K ARR, 15 employees | linkedin.com/in/mikej | 2nd | 2025-01-27 | 15:15 | Pending | Standard | No | - | High | Yes | Wait 1 week |
+| Sarah Chen | Co-Founder & CTO | DevTools Inc | Seed | Andreessen Horowitz, $2M seed, Crunchbase verified | linkedin.com/in/sarahchen | 2nd | 2025-01-27 | 14:30 | Pending | Standard | No | - | High | Yes | Wait 1 week |
+| Mike Johnson | Founder & CEO | CodeTools | Series A | Sequoia Capital, $8M Series A, TechCrunch article | linkedin.com/in/mikej | 2nd | 2025-01-27 | 15:15 | Pending | Standard | No | - | High | Yes | Wait 1 week |
 ```
 
 **Documentation Process:**
-1. **Before starting**: Create the tracking file for the session
-2. **During outreach**: Add each founder immediately after sending invitation
-3. **After each founder**: Update status and confirm message was sent
-4. **End of session**: Review and summarize results
-5. **Weekly review**: Check for responses and update statuses
+1. **Before starting**: Check existing tracking files for duplicates
+2. **During analysis**: Add disqualified candidates to `linkedin_disqualified_candidates.md`
+3. **After sending**: Add sent requests to `linkedin_sent_requests.md` immediately
+4. **End of session**: Update `linkedin_outreach_tracking.md` with session summary
+5. **Weekly review**: Check for responses and update all tracking files
 
 **File Location**: Save in `/founder_outreach/logs/` directory
+
+## Tracking System Workflow
+
+### File Structure
+```
+founder_outreach/
+├── linkedin_disqualified_candidates.md    # All disqualified profiles
+├── linkedin_sent_requests.md              # All sent connection requests  
+├── linkedin_outreach_tracking.md          # Detailed campaign tracking
+└── linkedin_founder_outreach_prompt.md    # This prompt file
+```
+
+### Workflow Steps
+1. **Start Session**: Open both tracking files in separate tabs
+2. **For Each Candidate**:
+   - Check `linkedin_disqualified_candidates.md` for their name
+   - Check `linkedin_sent_requests.md` quick reference list
+   - If found in either: Skip candidate
+   - If not found: Proceed with analysis
+3. **After Analysis**:
+   - If disqualified: Add to `linkedin_disqualified_candidates.md`
+   - If qualified and sent: Add to `linkedin_sent_requests.md`
+4. **End Session**: Update `linkedin_outreach_tracking.md` with summary
+
+### Quick Reference Format
+- **Disqualified**: Name, Company, Reason, Date
+- **Sent Requests**: Name, Company, Status, Funding Details
 
 ## Campaign Execution Tips
 
 ### Best Practices
+- **Check tracking files first**: Always check disqualified and sent request files before analyzing
 - **Quality over quantity**: Focus on relevant, high-potential targets
-- **Funding verification first**: Always verify funding status before sending connection requests
+- **Funding verification first**: Always verify external funding status before sending connection requests
 - **Systematic approach**: Work through search results methodically
 - **Personalized messaging**: Use company name when possible
-- **Track everything**: Maintain detailed logs for follow-up including funding verification details
+- **Track everything**: Update tracking files immediately during the process
 - **Focus on fit**: Prioritize founders who could actually use our product
-- **Bootstrapped priority**: Bootstrapped founders often have more decision-making authority and budget control
+- **Funded company priority**: Funded founders have proven traction and investor validation
+- **Avoid duplicates**: Never analyze or contact the same person twice
 
 ### What to Avoid
 - Don't use InMail (saves credits)
@@ -197,12 +251,12 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 
 ## Target Company Types (High Priority)
 
-### Ideal Targets (Bootstrapped or Verified Seed-Funded Only):
-- **Bootstrapped Developer Tools Companies**: Profitable tools for other developers, proven market fit
-- **Seed-Funded SaaS Startups**: Software products with verified external funding and development teams
-- **Bootstrapped AI/ML Companies**: Revenue-generating AI products, understand AI value proposition
+### Ideal Targets (Verified Funded Companies Only):
+- **Funded Developer Tools Companies**: Seed/Series A companies building tools for other developers
+- **Funded SaaS Startups**: Software products with verified external funding and development teams
+- **Funded AI/ML Companies**: Seed/Series A AI products with proven investor backing
 - **Verified Seed-Stage Startups**: External funding confirmed, need to move fast with limited resources
-- **Bootstrapped B2B Software**: Profitable complex products that could benefit from AI agents
+- **Funded B2B Software**: Series A companies with complex products that could benefit from AI agents
 
 ### Good Targets:
 - **E-commerce Platforms**: Custom software development needs
