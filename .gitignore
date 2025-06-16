@@ -16,3 +16,8 @@ npm-debug.log*
 # Build outputs
 dist/
 build/
+packages/backend/twitter-status.sh
+packages/backend/setup-twitter.sh
+packages/backend/restart-with-permanent-tokens.sh
+packages/backend/tokens.json
+packages/backend/save-current-tokens.sh
