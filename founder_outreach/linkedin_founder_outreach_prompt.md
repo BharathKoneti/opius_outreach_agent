@@ -114,15 +114,15 @@ Use LinkedIn search with these terms:
 6. Confirm "Pending" status appears
 
 ### Step 4: Message Template
-**Character limit**: 300 characters (aim for 260-280 characters)
+**Character limit**: 300 characters (aim for 260-270 characters)
 
 ```
-Hi [NAME], at Opius AI we're building autonomous AI agents for software development. Our Planning Agent helps teams ship faster without extra PMs/engineers. Cursor extension available: https://open-vsx.org/extension/opius-ai/opius-planner-cursor Would love to connect!
+Hi [NAME], at Opius AI we're building autonomous AI agents for software development without PMs/engineers. Planning Agent in early access, launching soon.  https://open-vsx.org/extension/opius-ai/opius-planner-cursor Would love to stay connected!
 ```
 
 **Alternative Template for Developer Tool Founders:**
 ```
-Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI agents for software development. Check out our Cursor Planning Agent extension: https://open-vsx.org/extension/opius-ai/opius-planner-cursor Let's connect!
+Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI agents for software development without PMs/engineers. Planning Agent: https://open-vsx.org/extension/opius-ai/opius-planner-cursor Let's connect!
 ```
 
 **Template Variables:**
