@@ -49,17 +49,27 @@ Use LinkedIn search with these terms:
    - Click on their company name to verify it's a real tech company
    - Check company size and funding stage
    - Look for product descriptions or customer testimonials
-5. **Activity Level**:
+5. **FUNDING VERIFICATION (MANDATORY)**:
+   - **Target Only**: Bootstrapped founders OR Seed-funded companies with verified external funding
+   - **Bootstrapped Verification**: Look for mentions of "bootstrapped", "self-funded", "profitable", revenue milestones
+   - **Seed Funding Verification**: Must have verifiable external funding from recognized sources:
+     - Check for investor names in LinkedIn posts/about section
+     - Look for funding announcements in their activity feed
+     - Search for company name + "funding" or "seed round" in recent posts
+     - Verify investor names are real VCs/angels (not friends/family claims)
+     - Look for third-party validation (TechCrunch, press releases, etc.)
+   - **DISQUALIFY**: Companies claiming funding without verification or pre-revenue/pre-product startups
+6. **Activity Level**:
    - Check recent posts (last 3 months)
    - Look for product updates, hiring posts, or industry commentary
    - Verify they're actively posting about startup/tech topics
-6. **Geographic Relevance**:
+7. **Geographic Relevance**:
    - Check their location (SF Bay Area, NYC, Austin, etc.)
    - Ensure they're building products for global/US markets
-7. **Connection Quality**:
+8. **Connection Quality**:
    - Review mutual connections (if 2nd degree)
    - Check if mutual connections are relevant to our industry
-8. **Potential Fit Assessment**:
+9. **Potential Fit Assessment**:
    - Do they build software products that could benefit from AI agents?
    - Are they in a stage where they might need development acceleration?
    - Do they have engineering teams that could use our tools?
@@ -67,11 +77,22 @@ Use LinkedIn search with these terms:
 **Disqualification Criteria:**
 - Not currently active in founding/leadership role
 - Focus on non-tech sectors (retail, hospitality, etc.)
-- Very early stage (pre-product) or very mature companies
+- **Unverified funding claims** (no external validation of investors/funding)
+- **Pre-revenue/pre-product startups** (too early stage)
+- **Series A+ companies** (likely have established processes, harder to sell to)
+- **"Stealth mode" without funding verification** (could be just ideas)
 - Hardware-only companies with no software component
 - Inactive LinkedIn profile (no posts in 6+ months)
 - Suspicious or incomplete profile information
 - Companies that are clearly not a fit for developer tools
+
+**Funding Verification Methods:**
+1. **LinkedIn Activity**: Recent posts about funding rounds, investor meetings, or revenue milestones
+2. **About Section**: Mentions of specific investors, funding amounts, or bootstrapped status
+3. **Company Page**: Check company LinkedIn page for funding announcements
+4. **Investor Validation**: If investors mentioned, verify they're real VCs/angels with portfolios
+5. **Third-Party Sources**: Look for external press coverage or funding databases
+6. **Revenue Indicators**: For bootstrapped companies, look for hiring posts, office moves, product launches indicating traction
 
 **Documentation During Vetting**:
 - Take note of their company's tech stack for potential customization
@@ -119,7 +140,8 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 - Founder Name (First Last)
 - Title
 - Company
-- Company Stage (Seed/Series A/B/etc.)
+- Funding Status (Bootstrapped/Seed-Verified/Seed-Unverified)
+- Funding Details (Investor names, revenue indicators, or verification source)
 - LinkedIn Profile URL
 - Connection Degree (1st, 2nd, 3rd+)
 - Date Contacted (YYYY-MM-DD)
@@ -134,9 +156,10 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 
 **Sample Log Entry:**
 ```markdown
-| Founder Name | Title | Company | Stage | LinkedIn URL | Connection Degree | Date | Time | Status | Template | Response | Response Notes | Fit | Follow-up | Next Action |
-|--------------|-------|---------|-------|--------------|-------------------|------|------|--------|----------|----------|----------------|-----|-----------|-------------|
-| Sarah Chen | Co-Founder & CTO | DevTools Inc | Series A | linkedin.com/in/sarahchen | 2nd | 2025-01-27 | 14:30 | Pending | Standard | No | - | High | Yes | Wait 1 week |
+| Founder Name | Title | Company | Funding Status | Funding Details | LinkedIn URL | Connection Degree | Date | Time | Status | Template | Response | Response Notes | Fit | Follow-up | Next Action |
+|--------------|-------|---------|----------------|-----------------|--------------|-------------------|------|------|--------|----------|----------|----------------|-----|-----------|-------------|
+| Sarah Chen | Co-Founder & CTO | DevTools Inc | Seed-Verified | Andreessen Horowitz, $2M seed | linkedin.com/in/sarahchen | 2nd | 2025-01-27 | 14:30 | Pending | Standard | No | - | High | Yes | Wait 1 week |
+| Mike Johnson | Founder & CEO | CodeTools | Bootstrapped | $500K ARR, 15 employees | linkedin.com/in/mikej | 2nd | 2025-01-27 | 15:15 | Pending | Standard | No | - | High | Yes | Wait 1 week |
 ```
 
 **Documentation Process:**
@@ -152,10 +175,12 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 
 ### Best Practices
 - **Quality over quantity**: Focus on relevant, high-potential targets
+- **Funding verification first**: Always verify funding status before sending connection requests
 - **Systematic approach**: Work through search results methodically
 - **Personalized messaging**: Use company name when possible
-- **Track everything**: Maintain detailed logs for follow-up
+- **Track everything**: Maintain detailed logs for follow-up including funding verification details
 - **Focus on fit**: Prioritize founders who could actually use our product
+- **Bootstrapped priority**: Bootstrapped founders often have more decision-making authority and budget control
 
 ### What to Avoid
 - Don't use InMail (saves credits)
@@ -172,12 +197,12 @@ Hi [NAME], love what you're building at [COMPANY]! At Opius AI we're creating AI
 
 ## Target Company Types (High Priority)
 
-### Ideal Targets:
-- **Developer Tools Companies**: Building tools for other developers
-- **SaaS Startups**: Software products with development teams
-- **AI/ML Companies**: Already understand AI value proposition
-- **Early-Stage Startups**: Need to move fast with limited resources
-- **B2B Software**: Complex products that could benefit from AI agents
+### Ideal Targets (Bootstrapped or Verified Seed-Funded Only):
+- **Bootstrapped Developer Tools Companies**: Profitable tools for other developers, proven market fit
+- **Seed-Funded SaaS Startups**: Software products with verified external funding and development teams
+- **Bootstrapped AI/ML Companies**: Revenue-generating AI products, understand AI value proposition
+- **Verified Seed-Stage Startups**: External funding confirmed, need to move fast with limited resources
+- **Bootstrapped B2B Software**: Profitable complex products that could benefit from AI agents
 
 ### Good Targets:
 - **E-commerce Platforms**: Custom software development needs
