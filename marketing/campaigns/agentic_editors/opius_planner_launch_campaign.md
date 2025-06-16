@@ -165,7 +165,8 @@ Results:
 
 Just launched as a Cursor extension for anyone dealing with similar frustrations.
 
-Technical details and demo: https://open-vsx.org/extension/opius-ai/opius-planner-cursor
+Website: https://opiusai.com/
+Extension: https://open-vsx.org/extension/opius-ai/opius-planner-cursor
 
 Open to questions about the implementation!
 
@@ -267,7 +268,8 @@ Technical approach:
 
 The difference is dramatic - went from ~30% satisfactory results to ~90% with Composer.
 
-Live demo: https://open-vsx.org/extension/opius-ai/opius-planner-cursor
+Live demo: https://opiusai.com/
+Extension: https://open-vsx.org/extension/opius-ai/opius-planner-cursor
 
 Planning to open source the core algorithm. Would love feedback from the HN community!
 ```
@@ -333,3 +335,32 @@ Interested in feedback on the approach!
 ---
 
 *Ready for multi-platform execution and community building!*
+
+---
+
+## 📝 **EXECUTION LEARNINGS & UPDATES**
+
+### **Reddit r/artificial Execution Notes**
+- **Date**: [In Progress]
+- **Status**: Partially completed
+- **Issues Encountered**:
+  - Link provided (https://open-vsx.org/extension/opius-ai/opius-planner-cursor) is extension page, not demo
+  - Found main website (https://opiusai.com/) for better demo experience
+  - Flair selection worked well - "Discussion" flair appropriate
+  - Playwright automation successfully filled forms
+- **Action Items**:
+  - [x] Update demo link across all campaign content - FIXED
+  - [x] Found main website link (https://opiusai.com/) - RESOLVED
+  - [ ] Complete Reddit r/artificial post submission
+
+### **Technical Notes**:
+- Playwright automation working for Reddit posting
+- Form filling successful for title and body content
+- Flair selection process documented
+- Need to avoid getting stuck in loops when issues arise
+
+### **Next Steps**:
+1. Fix demo link issue
+2. Complete Reddit r/artificial post
+3. Update campaign checklist
+4. Proceed to Hacker News execution

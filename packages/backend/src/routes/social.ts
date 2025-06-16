@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { z } from 'zod';
 import { asyncHandler } from '../middleware/errorHandler';
-import { saveLinkedInTokens, getLinkedInTokens, clearLinkedInTokens, saveTwitterTokens, getTwitterTokens, clearTwitterTokens } from '../utils/tokenStorage';
+import { saveLinkedInTokens, getLinkedInTokens, clearLinkedInTokens, saveTwitterTokens, getTwitterTokens, clearTwitterTokens, saveRedditTokens, getRedditTokens, clearRedditTokens } from '../utils/tokenStorage';
 import crypto from 'crypto';
 
 const router = Router();
@@ -327,6 +327,107 @@ router.get('/oauth/:platform/callback', asyncHandler(async (req: Request, res: R
         error: 'Failed to process Twitter OAuth callback'
       });
     }
+  } else if (platform === 'reddit') {
+    const clientId = process.env.REDDIT_CLIENT_ID;
+    const clientSecret = process.env.REDDIT_CLIENT_SECRET;
+    const redirectUri = process.env.REDDIT_REDIRECT_URI || 'http://localhost:3001/api/social/oauth/reddit/callback';
+    
+    if (!clientId || !clientSecret) {
+      return res.status(500).json({
+        success: false,
+        error: 'Reddit credentials not configured'
+      });
+    }
+    
+    try {
+      // Exchange authorization code for access token
+      const tokenResponse = await fetch('https://www.reddit.com/api/v1/access_token', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Authorization': `Basic ${Buffer.from(`${clientId}:${clientSecret}`).toString('base64')}`,
+          'User-Agent': 'Opius Outreach Agent v1.0'
+        },
+        body: new URLSearchParams({
+          grant_type: 'authorization_code',
+          code: code as string,
+          redirect_uri: redirectUri
+        }),
+      });
+      
+      const tokenData = await tokenResponse.json() as {
+        access_token?: string;
+        refresh_token?: string;
+        expires_in?: number;
+        scope?: string;
+        error?: string;
+        error_description?: string;
+      };
+      
+      if (!tokenResponse.ok) {
+        return res.status(400).json({
+          success: false,
+          error: 'Failed to exchange code for token',
+          details: tokenData
+        });
+      }
+      
+      // Get user profile information
+      const profileResponse = await fetch('https://oauth.reddit.com/api/v1/me', {
+        headers: {
+          'Authorization': `Bearer ${tokenData.access_token}`,
+          'User-Agent': 'Opius Outreach Agent v1.0'
+        },
+      });
+      
+      const profileData = await profileResponse.json() as {
+        name?: string;
+        id?: string;
+        icon_img?: string;
+        subreddit?: {
+          display_name?: string;
+        };
+      };
+      
+      // Store tokens persistently
+      if (tokenData.access_token && tokenData.refresh_token) {
+        await saveRedditTokens({
+          accessToken: tokenData.access_token,
+          refreshToken: tokenData.refresh_token,
+          expiresIn: tokenData.expires_in || 3600, // Default 1 hour
+          scope: tokenData.scope || '',
+          profile: profileData,
+          createdAt: Date.now()
+        });
+      }
+      
+      res.json({
+        success: true,
+        message: 'Reddit connected successfully!',
+        data: {
+          platform,
+          profile: {
+            id: profileData.id,
+            name: profileData.name,
+            displayName: profileData.subreddit?.display_name,
+            avatar: profileData.icon_img
+          },
+          tokenInfo: {
+            hasAccessToken: !!tokenData.access_token,
+            hasRefreshToken: !!tokenData.refresh_token,
+            expiresIn: tokenData.expires_in,
+            scope: tokenData.scope
+          }
+        }
+      });
+      
+    } catch (error) {
+      console.error('Reddit OAuth error:', error);
+      res.status(500).json({
+        success: false,
+        error: 'Failed to process Reddit OAuth callback'
+      });
+    }
   } else {
     // TODO: Handle other platforms
     res.json({
@@ -403,10 +504,38 @@ router.get('/oauth/:platform/authorize', asyncHandler(async (req: Request, res: 
         state
       }
     });
+  } else if (platform === 'reddit') {
+    const clientId = process.env.REDDIT_CLIENT_ID;
+    const redirectUri = process.env.REDDIT_REDIRECT_URI || 'http://localhost:3001/api/social/oauth/reddit/callback';
+    const state = Math.random().toString(36).substring(2, 15); // Generate random state
+    const scope = 'identity submit read'; // Required scopes for Reddit
+    
+    if (!clientId) {
+      return res.status(400).json({
+        success: false,
+        error: 'Reddit Client ID not configured'
+      });
+    }
+    
+    const authUrl = `https://www.reddit.com/api/v1/authorize?` +
+      `client_id=${clientId}&` +
+      `response_type=code&` +
+      `state=${state}&` +
+      `redirect_uri=${encodeURIComponent(redirectUri)}&` +
+      `duration=permanent&` +
+      `scope=${encodeURIComponent(scope)}`;
+    
+    res.json({
+      success: true,
+      data: {
+        authUrl,
+        platform,
+        state
+      }
+    });
   } else {
     // TODO: Implement other platforms
     const authUrls = {
-      reddit: 'https://www.reddit.com/api/v1/authorize?...',
       hackernews: 'https://news.ycombinator.com/oauth/authorize?...'
     };
     
@@ -686,6 +815,145 @@ router.delete('/twitter/post/:postId', asyncHandler(async (req: Request, res: Re
     res.status(500).json({
       success: false,
       error: 'Failed to delete Twitter post'
+    });
+  }
+}));
+
+// Reddit posting endpoints
+router.post('/reddit/post', asyncHandler(async (req: Request, res: Response) => {
+  const { content, subreddit = 'test', flair } = req.body;
+  
+  if (!content || typeof content !== 'string') {
+    return res.status(400).json({
+      success: false,
+      error: 'Content is required'
+    });
+  }
+  
+  const tokens = await getRedditTokens();
+  if (!tokens?.accessToken) {
+    return res.status(401).json({
+      success: false,
+      error: 'Reddit not connected. Please authenticate first.'
+    });
+  }
+  
+  try {
+    // Create Reddit post using the submit API
+    const postData = new URLSearchParams({
+      api_type: 'json',
+      kind: 'self',
+      sr: subreddit,
+      title: content.split('\n')[0] || content.substring(0, 100), // Use first line or first 100 chars as title
+      text: content
+    });
+    
+    // Add flair if provided
+    if (flair) {
+      postData.append('flair_id', flair.id || '');
+      postData.append('flair_text', flair.text || '');
+    }
+    
+    const postResponse = await fetch('https://oauth.reddit.com/api/submit', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${tokens.accessToken}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'Opius Outreach Agent v1.0'
+      },
+      body: postData
+    });
+    
+    const postResult = await postResponse.json() as { 
+      json?: { 
+        errors?: Array<any>; 
+        data?: { 
+          name?: string; 
+          url?: string; 
+        }; 
+      }; 
+    };
+    
+    if (!postResponse.ok || postResult.json?.errors?.length) {
+      return res.status(400).json({
+        success: false,
+        error: 'Failed to create Reddit post',
+        details: postResult.json?.errors || 'Unknown error'
+      });
+    }
+    
+    res.json({
+      success: true,
+      message: 'Reddit post created successfully!',
+      data: {
+        postId: postResult.json?.data?.name,
+        url: postResult.json?.data?.url,
+        content: content,
+        subreddit: subreddit,
+        platform: 'reddit',
+        createdAt: new Date().toISOString()
+      }
+    });
+    
+  } catch (error) {
+    console.error('Reddit posting error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to create Reddit post'
+    });
+  }
+}));
+
+// Delete Reddit post
+router.delete('/reddit/post/:postId', asyncHandler(async (req: Request, res: Response) => {
+  const { postId } = req.params;
+  
+  const tokens = await getRedditTokens();
+  if (!tokens?.accessToken) {
+    return res.status(401).json({
+      success: false,
+      error: 'Reddit not connected. Please authenticate first.'
+    });
+  }
+  
+  try {
+    const deleteData = new URLSearchParams({
+      id: postId
+    });
+    
+    const deleteResponse = await fetch('https://oauth.reddit.com/api/del', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${tokens.accessToken}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': 'Opius Outreach Agent v1.0'
+      },
+      body: deleteData
+    });
+    
+    if (!deleteResponse.ok) {
+      const errorData = await deleteResponse.json();
+      return res.status(400).json({
+        success: false,
+        error: 'Failed to delete Reddit post',
+        details: errorData
+      });
+    }
+    
+    res.json({
+      success: true,
+      message: 'Reddit post deleted successfully!',
+      data: {
+        postId: postId,
+        deletedAt: new Date().toISOString()
+      }
+    });
+    
+  } catch (error) {
+    console.error('Reddit delete error:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to delete Reddit post'
     });
   }
 }));

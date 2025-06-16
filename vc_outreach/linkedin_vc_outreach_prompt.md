@@ -23,16 +23,63 @@ Use LinkedIn search with these terms:
 3. **3rd+ degree connections** (only if no better options)
 
 **Look for:**
-- "Connect" button (indicates ability to send invitation)
+- "Connect" button (indicates ability to send invitation) - may be under "More" button
 - Relevant titles: General Partner, Managing Partner, Founder, Principal
 - Active VC firms (check recent activity/posts)
 
+### Step 2.5: Profile Vetting Process
+**MANDATORY**: Click on each potential target's profile to thoroughly vet them before sending connection requests.
+
+**Profile Vetting Checklist:**
+1. **Click on the VC's name/profile** to open their full LinkedIn profile
+2. **Verify Current Role**: 
+   - Is their title accurate and current?
+   - Are they actually at a VC firm (not just claiming to be)?
+   - Check "Experience" section for role duration
+3. **Investment Focus Assessment**:
+   - Read their "About" section for investment thesis
+   - Check if they invest in tech/software companies
+   - Look for AI, developer tools, or relevant sector experience
+4. **Firm Validation**:
+   - Click on their company name to verify it's a real VC firm
+   - Check firm size and investment stage (seed, series A, etc.)
+   - Look for portfolio companies in their posts/activity
+5. **Activity Level**:
+   - Check recent posts (last 3 months)
+   - Look for investment announcements or industry commentary
+   - Verify they're actively posting about VC/startup topics
+6. **Geographic Relevance**:
+   - Check their location (SF Bay Area, NYC, etc.)
+   - Ensure they invest in US companies if we're US-based
+7. **Connection Quality**:
+   - Review mutual connections (if 2nd degree)
+   - Check if mutual connections are relevant to our industry
+
+**Disqualification Criteria:**
+- Not currently active in VC role
+- Focus on non-tech sectors (healthcare, energy, etc.)
+- Only invests in very early pre-seed or very late stage
+- Located in regions where they don't invest in US companies
+- Inactive LinkedIn profile (no posts in 6+ months)
+- Suspicious or incomplete profile information
+
+**Documentation During Vetting**:
+- Take note of their investment focus for potential customization
+- Note any relevant portfolio companies
+- Flag any mutual connections for potential warm introductions
+
 ### Step 3: Connection Process
-1. Click "Connect" button
-2. Select "Add a note" 
-3. Use the personalized message template below
-4. Send invitation
-5. Confirm "Pending" status appears
+**IMPORTANT**: Only proceed after completing Step 2.5 Profile Vetting
+
+1. Navigate back to search results after profile review
+2. Look for "Connect" button for qualified targets:
+   - **Direct Connect**: Click "Connect" button if visible
+   - **Hidden Connect**: If only "Message" and "More" buttons are visible, click "More" → then "Connect"
+   - **Follow Only**: If only "Follow" button is available, skip this target (cannot send connection request)
+3. Select "Add a note" 
+4. Use the personalized message template below
+5. Send invitation
+6. Confirm "Pending" status appears
 
 ### Step 4: Message Template
 **Character limit**: 300 characters (aim for 263-268 characters)
@@ -47,14 +94,40 @@ Hi [NAME], at Opius AI we're building autonomous AI agents for software developm
 - Message has generated positive responses in previous campaigns
 
 ### Step 5: Tracking & Documentation
-Create/update a tracking log with:
-- VC Name
+**MANDATORY**: Create a detailed tracking log for each campaign session.
+
+**File Format**: Create a markdown table file named `linkedin_vc_outreach_log_[DATE].md`
+
+**Required tracking fields:**
+- VC Name (First Last)
 - Title
 - Company
-- Connection degree (1st, 2nd, 3rd+)
-- Date contacted
-- Status (Pending/Accepted/Declined)
-- Response notes
+- LinkedIn Profile URL
+- Connection Degree (1st, 2nd, 3rd+)
+- Date Contacted (YYYY-MM-DD)
+- Time Contacted (HH:MM)
+- Status (Sent/Pending/Accepted/Declined/No Response)
+- Message Sent (Yes/No - confirm template was used)
+- Response Received (Yes/No)
+- Response Notes
+- Follow-up Required (Yes/No)
+- Next Action
+
+**Sample Log Entry:**
+```markdown
+| VC Name | Title | Company | LinkedIn URL | Connection Degree | Date | Time | Status | Message Sent | Response | Response Notes | Follow-up | Next Action |
+|---------|-------|---------|--------------|-------------------|------|------|--------|--------------|----------|----------------|-----------|-------------|
+| Daniel Myers | General Partner | Crosslink Capital | linkedin.com/in/danielmyers | 2nd | 2025-01-27 | 14:30 | Pending | Yes | No | - | Yes | Wait 1 week |
+```
+
+**Documentation Process:**
+1. **Before starting**: Create the tracking file for the session
+2. **During outreach**: Add each VC immediately after sending invitation
+3. **After each VC**: Update status and confirm message was sent
+4. **End of session**: Review and summarize results
+5. **Weekly review**: Check for responses and update statuses
+
+**File Location**: Save in `/vc_outreach/logs/` directory
 
 ## Campaign Execution Tips
 

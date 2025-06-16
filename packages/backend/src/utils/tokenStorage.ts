@@ -20,9 +20,19 @@ interface TwitterTokens {
   createdAt: number;
 }
 
+interface RedditTokens {
+  accessToken: string;
+  refreshToken: string;
+  expiresIn: number;
+  scope: string;
+  profile: any;
+  createdAt: number;
+}
+
 interface TokenStorage {
   linkedin?: LinkedInTokens;
   twitter?: TwitterTokens;
+  reddit?: RedditTokens;
 }
 
 // LinkedIn token functions
@@ -245,6 +255,156 @@ async function refreshTwitterToken(refreshToken: string): Promise<TwitterTokens 
     return newTokens;
   } catch (error) {
     console.error('Error refreshing Twitter token:', error);
+    return null;
+  }
+}
+
+// Reddit token functions
+export async function saveRedditTokens(tokens: RedditTokens): Promise<void> {
+  try {
+    let storage: TokenStorage = {};
+    
+    // Try to read existing tokens
+    try {
+      const data = await fs.readFile(TOKEN_FILE, 'utf-8');
+      storage = JSON.parse(data);
+    } catch (error) {
+      // File doesn't exist yet, that's fine
+    }
+    
+    // Add timestamp for expiration checking
+    storage.reddit = {
+      ...tokens,
+      createdAt: Date.now()
+    };
+    
+    await fs.writeFile(TOKEN_FILE, JSON.stringify(storage, null, 2));
+    console.log('Reddit tokens saved successfully');
+  } catch (error) {
+    console.error('Failed to save Reddit tokens:', error);
+  }
+}
+
+export async function getRedditTokens(): Promise<RedditTokens | null> {
+  try {
+    const data = await fs.readFile(TOKEN_FILE, 'utf-8');
+    const storage: TokenStorage = JSON.parse(data);
+    
+    if (!storage.reddit) {
+      return null;
+    }
+    
+    const tokens = storage.reddit;
+    const now = Date.now();
+    const tokenAge = now - tokens.createdAt;
+    const expiresInMs = tokens.expiresIn * 1000;
+    
+    // Check if token is expired (with 5 minute buffer)
+    // Reddit tokens are permanent unless revoked
+    if (tokenAge >= (expiresInMs - 300000)) {
+      console.log('Reddit token expired, attempting refresh...');
+      
+      // Try to refresh the token
+      try {
+        const refreshedTokens = await refreshRedditToken(tokens.refreshToken);
+        if (refreshedTokens) {
+          return refreshedTokens;
+        }
+      } catch (error) {
+        console.error('Failed to refresh Reddit token:', error);
+      }
+      
+      return null;
+    }
+    
+    return tokens;
+  } catch (error) {
+    console.log('No Reddit tokens found or error reading tokens');
+    return null;
+  }
+}
+
+export async function clearRedditTokens(): Promise<void> {
+  try {
+    let storage: TokenStorage = {};
+    
+    try {
+      const data = await fs.readFile(TOKEN_FILE, 'utf-8');
+      storage = JSON.parse(data);
+    } catch (error) {
+      // File doesn't exist, nothing to clear
+      return;
+    }
+    
+    delete storage.reddit;
+    await fs.writeFile(TOKEN_FILE, JSON.stringify(storage, null, 2));
+    console.log('Reddit tokens cleared');
+  } catch (error) {
+    console.error('Failed to clear Reddit tokens:', error);
+  }
+}
+
+// Reddit token refresh function
+async function refreshRedditToken(refreshToken: string): Promise<RedditTokens | null> {
+  try {
+    const clientId = process.env.REDDIT_CLIENT_ID;
+    const clientSecret = process.env.REDDIT_CLIENT_SECRET;
+    
+    if (!clientId || !clientSecret) {
+      console.error('Reddit credentials not configured');
+      return null;
+    }
+    
+    const response = await fetch('https://www.reddit.com/api/v1/access_token', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Authorization': `Basic ${Buffer.from(`${clientId}:${clientSecret}`).toString('base64')}`,
+        'User-Agent': 'Opius Outreach Agent v1.0'
+      },
+      body: new URLSearchParams({
+        grant_type: 'refresh_token',
+        refresh_token: refreshToken
+      })
+    });
+    
+    if (!response.ok) {
+      console.error('Failed to refresh Reddit token:', response.status);
+      return null;
+    }
+    
+    const tokenData = await response.json() as {
+      access_token: string;
+      refresh_token?: string;
+      expires_in: number;
+      scope: string;
+    };
+    
+    // Get user profile with new token
+    const profileResponse = await fetch('https://oauth.reddit.com/api/v1/me', {
+      headers: {
+        'Authorization': `Bearer ${tokenData.access_token}`,
+        'User-Agent': 'Opius Outreach Agent v1.0'
+      },
+    });
+    
+    const profileData = await profileResponse.json();
+    
+    const newTokens: RedditTokens = {
+      accessToken: tokenData.access_token,
+      refreshToken: tokenData.refresh_token || refreshToken,
+      expiresIn: tokenData.expires_in,
+      scope: tokenData.scope,
+      profile: profileData,
+      createdAt: Date.now()
+    };
+    
+    // Save the refreshed tokens
+    await saveRedditTokens(newTokens);
+    
+    return newTokens;
+  } catch (error) {
+    console.error('Error refreshing Reddit token:', error);
     return null;
   }
 } 
