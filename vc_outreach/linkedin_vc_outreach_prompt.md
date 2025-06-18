@@ -88,11 +88,13 @@ Use LinkedIn search with these terms:
 - **AI/Software Investment Indicators**: Portfolio companies like AI startups, developer tools, SaaS platforms, automation software
 
 **IMMEDIATE DISQUALIFICATION CRITERIA:**
+- **Inactive Funding**: No evidence of active investing in the last 3-4 years (2021-2025) - appears retired or inactive
 - **Sector-Only Focus**: Climate tech only, biotech only, transportation only, energy only, food/agriculture only
 - **Non-Tech Focus**: Real estate, retail, consumer goods, traditional industries
 - **Wrong Stage**: Pre-seed only or late-stage only (Series C+)
 - **Geographic Constraints**: Only invests outside our target market
 - **Corporate VC**: Internal corporate venture arms (different process)
+- **Wind-Down Firms**: VC firms that are no longer actively investing or in wind-down mode
 
 ### Step 2.5: Check Tracking Files (MANDATORY)
 **BEFORE ANALYZING ANY VC CANDIDATE**: Check these files to avoid duplicate work:
@@ -116,35 +118,44 @@ Use LinkedIn search with these terms:
    - Is their title accurate and current?
    - Are they actually at a VC firm (not just claiming to be)?
    - Check "Experience" section for role duration
-3. **AI/SOFTWARE INVESTMENT FOCUS VALIDATION** (CRITICAL):
+3. **ACTIVE FUNDING VALIDATION** (CRITICAL - NEW REQUIREMENT):
+   - **Recent Investment Activity**: Check for investment announcements, portfolio additions, or funding news in the last 3-4 years (2021-2025)
+   - **LinkedIn Posts**: Look for posts about new investments, portfolio company updates, or funding announcements
+   - **Portfolio Freshness**: Verify their firm has made recent investments (not just legacy portfolio from 5+ years ago)
+   - **Experience Section**: Check if their current VC role is recent (started within last 5 years) vs. outdated/inactive
+   - **DISQUALIFY IF**: No evidence of active investing in the last 3-4 years, appears to be inactive or retired from VC
+4. **AI/SOFTWARE INVESTMENT FOCUS VALIDATION** (CRITICAL):
    - **Portfolio Analysis**: Click on their company name to check portfolio companies
    - **Look for AI/Software Companies**: Search for AI startups, developer tools, SaaS platforms, automation software
    - **Recent Posts**: Check if they post about AI, software development, developer tools, or enterprise software
    - **Investment Thesis**: Read their "About" section for AI/software investment focus
    - **Avoid Sector-Only VCs**: If they only post about climate, biotech, transportation, energy - DISQUALIFY
-4. **Firm Validation**:
+5. **Firm Validation**:
    - Click on their company name to verify it's a real VC firm
    - Check firm size and investment stage (seed, series A, etc.)
    - **Portfolio Review**: Look for AI/software companies in firm portfolio
-5. **Activity Level**:
+   - **Recent Fund Activity**: Verify the firm is actively investing (not in wind-down mode)
+6. **Activity Level**:
    - Check recent posts (last 3 months)
    - Look for AI/software investment announcements or industry commentary
    - Verify they're actively posting about VC/startup topics (not just sector-specific)
-6. **Geographic Relevance**:
+7. **Geographic Relevance**:
    - Check their location (SF Bay Area, NYC, etc.)
    - Ensure they invest in US companies if we're US-based
-7. **Connection Quality**:
+8. **Connection Quality**:
    - Review mutual connections (if 2nd degree)
    - Check if mutual connections are relevant to our industry
 
 **Disqualification Criteria:**
-- **PRIMARY**: No AI/software investment focus (climate only, biotech only, transportation only, etc.)
+- **PRIMARY**: No evidence of active funding in the last 3-4 years (2021-2025) - appears inactive or retired from VC
+- **SECONDARY**: No AI/software investment focus (climate only, biotech only, transportation only, etc.)
 - Not currently active in VC role
 - Focus on non-tech sectors (healthcare only, energy only, etc.)
 - Only invests in very early pre-seed or very late stage
 - Located in regions where they don't invest in US companies
 - Inactive LinkedIn profile (no posts in 6+ months)
 - Suspicious or incomplete profile information
+- Firm appears to be in wind-down mode or no longer actively investing
 
 **Documentation During Vetting**:
 - Take note of their investment focus for potential customization

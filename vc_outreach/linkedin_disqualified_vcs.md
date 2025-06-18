@@ -124,11 +124,19 @@ This file tracks all LinkedIn VC profiles that have been analyzed and disqualifi
 
 ### Amy Huang
 - **Reason**: Mixed investment focus with biotech sector specialization
-- **Company**: General Partner | Co-Founder at Mace Ventures + ARCHina Capital (dual GP roles)
-- **Details**: While she has dual GP roles and mentions AI in her About section ("If you build an AI Feng Shui app, please DM me"), her board positions indicate biotech/healthcare focus
-- **Board Positions**: Microvascular Therapeutics (biotech), Bryte (smart sleep technology) - suggests healthcare/biotech specialization rather than general AI/software
-- **Investment Focus**: Mixed portfolio with apparent biotech/healthcare focus rather than general AI/software development tools
+- **Company**: General Partner | Co-Founder at Mace Ventures + ARChina Capital
+- **Details**: While she has some AI mentions in her profile ("If you build an AI Feng Shui app, please DM me"), her board positions include multiple biotech companies (Anavex Life Sciences, Adagio Therapeutics, Evelo Biosciences), indicating mixed sector focus that includes significant biotech specialization
+- **Investment Focus**: Mixed - has both AI/tech and biotech investments, making focus unclear for pure AI/software development tools
 - **Date Analyzed**: January 28, 2025
+
+### Alex Hartigan
+- **Reason**: No active funding in the last 3-4 years - appears inactive/retired from VC
+- **Company**: Independent Venture Capital Investor (Between Roles)
+- **Details**: Last active VC role was General Partner at Steamboat Ventures (May 2005-Dec 2015), which ended over 9 years ago. Currently listed as "Venture Capital Investor" but appears to be independent/between roles with no evidence of active investing since 2015
+- **Investment Focus**: Previously had good technology/media focus with successful IPOs (YY Inc., Gridsum), but no longer actively investing
+- **Active Funding Status**: ❌ FAILED - No evidence of active investments in the last 3-4 years (2021-2025)
+- **Date Analyzed**: January 28, 2025
+- **Note**: Should be removed from Campaign 2 sent requests and replaced with an actively investing VC
 
 ## Search Patterns to Avoid
 - Transportation/mobility VCs (Trucks VC, automotive focus)
@@ -138,7 +146,7 @@ This file tracks all LinkedIn VC profiles that have been analyzed and disqualifi
 - Real estate VCs (proptech only)
 - Consulting firms (not actual VCs)
 
-## Total Disqualified: 13
+## Total Disqualified: 14
 
 ---
 
