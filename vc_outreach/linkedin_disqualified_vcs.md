@@ -84,6 +84,52 @@ This file tracks all LinkedIn VC profiles that have been analyzed and disqualifi
 - **Investment Focus**: Biotech/healthcare based on TPG Biotech background
 - **Notes**: Previous experience at TPG Biotech indicates healthcare/biotech investment focus, not relevant for AI/software development tools
 
+### Vasudev Bailey - Investor (Stealth Company), formerly Managing Partner at ARTIS Ventures
+- **Disqualified**: December 16, 2024
+- **Profile**: Previously Managing Partner at ARTIS Ventures (2016-2024)
+- **2nd Degree**: ✅ (via Mark Bayer, Oana Olteanu)
+- **Reason**: ❌ **Biotech/HealthTech Only** - Exclusively focused on "intersection of AI, technology, and biology"
+- **Portfolio Evidence**: All investments are biotech/healthtech (Eko, Seed Health, Freenome, ONI, Glyphic Biotechnologies, RadAI, etc.)
+- **PhD**: Biomedical Engineering - patents in nanotechnology for cancer detection
+- **Note**: Similar to Paul Grewal - AI focus limited to biotech applications only
+
+### Hiren Patel
+- **Reason**: Medtech-only focus
+- **Company**: General Partner at Venture Capital (medtech fund)
+- **Details**: "Medtech Angel Investor | Design Quality and Regulatory Affairs Specialist" - exclusively focused on medical devices and healthcare startups, not general AI/software development tools
+- **Investment Focus**: Early stage Medtech HW/SW & medical device startups only
+- **Date Analyzed**: January 28, 2025
+
+### Mahrinah Shije
+- **Reason**: Non-solicitation policy + Climate/impact focus only
+- **Company**: Managing General Partner at Endemic Venture Capital
+- **Details**: "I observe a non-solicitation policy on LinkedIn and do not hire service providers or invest in anything that comes through my inbox" - explicitly states she doesn't invest through LinkedIn outreach + focus appears to be climate/water tech only
+- **Investment Focus**: Climate tech, water tech, impact investing (not general AI/software)
+- **Date Analyzed**: January 28, 2025
+
+### Lauri J. Moore
+- **Reason**: Explicit preference against LinkedIn connection requests from strangers
+- **Company**: Partner at Bessemer Venture Partners (Data, Dev & AI Infra)
+- **Details**: "✨ To reach me, please email me at lauri@bvp.com . I will reply if there is a fit! **(There is no need to add me on LinkedIn if we haven't met.)**" - explicitly states preference against LinkedIn connection requests from people she hasn't met
+- **Investment Focus**: Perfect AI/developer tools focus but prefers email contact over LinkedIn
+- **Date Analyzed**: January 28, 2025
+
+### Tom Newby
+- **Reason**: Private equity firm, not venture capital
+- **Company**: Partner at Lexington Partners (2007-Present, 18+ years)
+- **Details**: Lexington Partners is a **private equity secondary fund** that buys existing LP interests from other investors, not a venture capital firm that invests in early-stage startups
+- **Background**: "Venture Capital & Private Equity Professional" but current role is in private equity secondary transactions, not VC investments in startups
+- **Investment Focus**: Private equity secondary buyouts, not early-stage venture capital investments
+- **Date Analyzed**: January 28, 2025
+
+### Amy Huang
+- **Reason**: Mixed investment focus with biotech sector specialization
+- **Company**: General Partner | Co-Founder at Mace Ventures + ARCHina Capital (dual GP roles)
+- **Details**: While she has dual GP roles and mentions AI in her About section ("If you build an AI Feng Shui app, please DM me"), her board positions indicate biotech/healthcare focus
+- **Board Positions**: Microvascular Therapeutics (biotech), Bryte (smart sleep technology) - suggests healthcare/biotech specialization rather than general AI/software
+- **Investment Focus**: Mixed portfolio with apparent biotech/healthcare focus rather than general AI/software development tools
+- **Date Analyzed**: January 28, 2025
+
 ## Search Patterns to Avoid
 - Transportation/mobility VCs (Trucks VC, automotive focus)
 - Biotech/healthcare-only VCs (cancer therapeutics, medical devices)
@@ -92,7 +138,7 @@ This file tracks all LinkedIn VC profiles that have been analyzed and disqualifi
 - Real estate VCs (proptech only)
 - Consulting firms (not actual VCs)
 
-## Total Disqualified: 5
+## Total Disqualified: 13
 
 ---
 
