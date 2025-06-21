@@ -69,6 +69,53 @@ Use LinkedIn search with these terms:
 - "VC general partner"
 - "venture capital founder"
 
+### Step 1.5: Alternative Route - Crunchbase to LinkedIn Strategy
+**NEW RECOMMENDED APPROACH**: Use Crunchbase to find AI-focused VCs, then locate their LinkedIn profiles.
+
+**Why This Works Better:**
+- **Targeted AI Focus**: Crunchbase allows filtering by investment sector (AI, software, developer tools)
+- **Fresh Prospects**: Find VCs who may not appear in standard LinkedIn searches
+- **Verified Investment Activity**: See actual portfolio companies and recent funding rounds
+- **Better Qualification**: Pre-qualified VCs who have actually invested in AI companies
+
+**Crunchbase Workflow:**
+1. **Navigate to Crunchbase**: Go to www.crunchbase.com
+2. **Search for AI Investors**: 
+   - Search terms: "artificial intelligence venture capital", "AI investors", "software development tools VC"
+   - Use filters: "People" → "Investor" → "Focus Areas: AI, Software, Developer Tools"
+3. **Identify Target VCs**:
+   - Look for General Partners, Managing Partners, Founding Partners
+   - Check their portfolio for AI/software companies
+   - Verify recent investment activity (2021-2025)
+4. **Find LinkedIn Profiles**:
+   - Copy the VC's full name from Crunchbase
+   - Search LinkedIn for "[VC Name] [Firm Name]"
+   - Verify it's the same person (photo, background, firm)
+5. **Standard Vetting Process**: 
+   - Follow Step 2.6 Profile Vetting Process
+   - Check tracking files for duplicates
+   - Proceed with connection process if qualified
+
+**Crunchbase Search Examples:**
+- "AI venture capital partners"
+- "Machine learning investors"
+- "Developer tools venture capital"
+- "Software automation investors"
+- "Business process automation VCs"
+
+**Benefits of Crunchbase Route:**
+- **Higher Quality Targets**: Pre-filtered for AI/software investment focus
+- **Recent Activity Visible**: Can see latest funding rounds they participated in
+- **Portfolio Validation**: Verify they actually invest in companies like Opius AI
+- **Fresh Prospects**: May find VCs not appearing in standard LinkedIn searches
+- **Investment Thesis Clarity**: Better understanding of their focus areas
+
+**Integration with LinkedIn Process:**
+- Use Crunchbase for target identification
+- Use LinkedIn for connection and outreach
+- Maintain same tracking and documentation process
+- Follow identical message template and connection strategy
+
 ### Step 2: Target Selection Criteria
 **Prioritize in this order:**
 1. **2nd degree connections** (highest priority - better response rates)

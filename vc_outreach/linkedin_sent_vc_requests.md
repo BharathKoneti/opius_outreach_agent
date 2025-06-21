@@ -6,7 +6,27 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 ---
 
 ## Quick Reference List (Most Recent First)
-1. **Michael Stark** (Crosslink Capital) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI/Technology Investment Focus [CAMPAIGN 2]
+1. **Neil Weintraut** (Motus Ventures) - ⭐⭐⭐⭐⭐ PRESTIGIOUS Managing Partner + Ex-Palo Alto Venture Partners [CAMPAIGN 3]
+2. **James Tai** (EMCIFund) - ⭐⭐⭐⭐ EXCELLENT Managing Partner [CAMPAIGN 3]
+3. **jory bell** (Early Stage Engineered Biology Investor) - ⭐⭐⭐ GOOD Early Stage Investor [CAMPAIGN 3]
+4. **David Wong** (Audax Private Equity) - ⭐⭐⭐⭐ EXCELLENT Private Equity Partner [CAMPAIGN 3]
+5. **Charles Shao** (TSV Capital) - ⭐⭐⭐⭐ EXCELLENT General Partner [CAMPAIGN 3]
+6. **Jill Carroll** (SR One Capital Management) - ⭐⭐⭐ GOOD Partner [CAMPAIGN 3]
+7. **Brian Wheeler** (Bertram Capital & Morpheus Data) - ⭐⭐⭐⭐ EXCELLENT VC Partner + Tech Founder [CAMPAIGN 3]
+8. **Abdallah Katra** (Amazon/Ex-Morgan Stanley AI) - ⭐⭐⭐⭐ EXCELLENT AI Background [CAMPAIGN 3]
+9. **Johan Dowdy** (Asana) - ⭐⭐⭐ GOOD Tech Leadership [CAMPAIGN 3]
+10. **Michelle Gonzalez** (M12, Microsoft's Venture Fund) - ⭐⭐⭐⭐⭐ PRESTIGIOUS Global Head [CAMPAIGN 3]
+11. **Aditya Singh** (Cota Capital) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI Investment Focus [CAMPAIGN 3]
+12. **Andrew Chan** (Venture Capital Investor) - ⭐⭐⭐⭐ EXCELLENT VC Investor [CAMPAIGN 3]
+13. **Joe Schoendorf** (Accel Partners) - ⭐⭐⭐⭐⭐ PRESTIGIOUS Top-Tier VC [CAMPAIGN 3]
+14. **Bryce Kam** (Sequoia Capital Global Equities) - ⭐⭐⭐⭐⭐ PRESTIGIOUS World's Top VC [CAMPAIGN 3]
+15. **Brian Yee** (ACME) - ⭐⭐⭐⭐ EXCELLENT Partner [CAMPAIGN 3]
+16. **Ramu Arunachalam** (A.Capital) - ⭐⭐⭐⭐ EXCELLENT General Partner [CAMPAIGN 3]
+17. **Danny Brown** (MaC Venture Capital) - ⭐⭐⭐⭐ EXCELLENT Partner [CAMPAIGN 3]
+18. **Michael Palank** (MaC Venture Capital) - ⭐⭐⭐⭐ EXCELLENT AI Investment Focus [CAMPAIGN 3]
+19. **Tom Cole** (CatchLight Capital Partners) - ⭐⭐⭐ STRONG Software/Tech Focus [CAMPAIGN 3]
+20. **Ankur P.** (Bling Capital & Divide by Zero) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI Investment Focus [CAMPAIGN 3]
+21. **Michael Stark** (Crosslink Capital) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI/Technology Investment Focus [CAMPAIGN 2]
 2. **Alex Katz** (ff Venture Capital) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI/VC Investment Focus [CAMPAIGN 2]
 3. **Karen Page** (B Capital) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI/Enterprise Software Investment Focus [CAMPAIGN 2]
 4. **Christopher Gottschalk** (Mouro Capital) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI/Fintech Investment Focus [CAMPAIGN 2]
@@ -817,3 +837,18 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 **All 2nd Degree Connections**: 100% ✅
 **Average AI Investment Rating**: ⭐⭐⭐⭐⭐ (Exceptional quality candidates)
 **Active Funding Validation**: 100% (All remaining contacts have evidence of active investing 2021-2025)
+
+# LinkedIn VC Outreach - Sent Requests Quick Reference
+
+## Campaign 5 - January 22, 2025 (11 VCs)
+39. **Jung Yeon Son** - Chief Legal Officer ✅
+38. **Gabriel Alvarado** (Porsche Ventures) - Partner ✅
+37. **Alok Vasudev** - Early-stage technology investor ✅
+36. **Daniel Lipkin** (Coursedog) - Senior Vice President of Engineering ✅
+35. **Pravin Vazirani** (Blue Owl Capital) - Managing Director ✅
+34. **Hong Tang** - Building complex distributed systems ✅
+33. **Siamak Hodjat** (Airbnb) - Director AI experiences ✅
+32. **Adam Cheyer** (Project Voice Capital Partners) - Venture Partner ✅
+31. **Mercedes Bent** (Lightspeed) - Venture Partner ✅
+30. **Paul Grewal** (SIC Venture Studio) - General Partner ✅
+29. **Sarah Tavel** (Benchmark) - Partner ✅
