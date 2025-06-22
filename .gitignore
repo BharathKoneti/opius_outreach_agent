@@ -21,3 +21,4 @@ packages/backend/setup-twitter.sh
 packages/backend/restart-with-permanent-tokens.sh
 packages/backend/tokens.json
 packages/backend/save-current-tokens.sh
+.DS_Store
