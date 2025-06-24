@@ -1,0 +1,268 @@
+[
+  {
+    "company_name": "xAI",
+    "year_founded": 2023,
+    "seed_leads": "Elon Musk",
+    "current_valuation_billion": 75.0,
+    "category": "Model"
+  },
+  {
+    "company_name": "Anthropic",
+    "year_founded": 2021,
+    "seed_leads": "Jaan Tallinn",
+    "current_valuation_billion": 61.5,
+    "category": "Model"
+  },
+  {
+    "company_name": "Figure AI",
+    "year_founded": 2022,
+    "seed_leads": "Self-Funded",
+    "current_valuation_billion": 39.5,
+    "category": "Robotics"
+  },
+  {
+    "company_name": "SSI",
+    "year_founded": 2024,
+    "seed_leads": "Grenoaks",
+    "current_valuation_billion": 32.0,
+    "category": "Model"
+  },
+  {
+    "company_name": "Perplexity",
+    "year_founded": 2022,
+    "seed_leads": "Elad Gil",
+    "current_valuation_billion": 14.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Cursor",
+    "year_founded": 2022,
+    "pivot_year": 2023,
+    "seed_leads": "Box / Neo",
+    "current_valuation_billion": 3.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Glean",
+    "year_founded": 2019,
+    "seed_leads": "KPILightspeed",
+    "current_valuation_billion": 7.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Mistral",
+    "year_founded": 2023,
+    "seed_leads": "Lightspeed",
+    "current_valuation_billion": 6.5,
+    "category": "Model"
+  },
+  {
+    "company_name": "Cohere",
+    "year_founded": 2019,
+    "seed_leads": "Radical",
+    "current_valuation_billion": 6.5,
+    "category": "Model"
+  },
+  {
+    "company_name": "Harvey",
+    "year_founded": 2023,
+    "seed_leads": "OpenAI Fund",
+    "current_valuation_billion": 5.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Skild AI",
+    "year_founded": 2023,
+    "seed_leads": "Sequoia",
+    "current_valuation_billion": 4.7,
+    "category": "Robotics"
+  },
+  {
+    "company_name": "Sierra",
+    "year_founded": 2023,
+    "seed_leads": "Benchmark",
+    "current_valuation_billion": 4.5,
+    "category": "App"
+  },
+  {
+    "company_name": "Cognition",
+    "year_founded": 2023,
+    "seed_leads": "Founders Fund",
+    "current_valuation_billion": 4.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Inflection AI",
+    "year_founded": 2022,
+    "seed_leads": "Reid Hoffman",
+    "current_valuation_billion": 4.0,
+    "category": "Model"
+  },
+  {
+    "company_name": "Runway AI",
+    "year_founded": 2018,
+    "seed_leads": "Amplify",
+    "current_valuation_billion": 3.5,
+    "category": "Model"
+  },
+  {
+    "company_name": "Eleven Labs",
+    "year_founded": 2022,
+    "seed_leads": "Credo Ventures",
+    "current_valuation_billion": 3.3,
+    "category": "Model"
+  },
+  {
+    "company_name": "Windsurf",
+    "year_founded": 2021,
+    "pivot_year": 2023,
+    "seed_leads": "Grenoaks",
+    "current_valuation_billion": 3.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Together AI",
+    "year_founded": 2022,
+    "pivot_year": 2023,
+    "seed_leads": "Chris Re",
+    "current_valuation_billion": 3.0,
+    "category": "Infra"
+  },
+  {
+    "company_name": "Clay",
+    "year_founded": 2017,
+    "pivot_year": 2023,
+    "seed_leads": "FRC",
+    "current_valuation_billion": 3.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Poolside",
+    "year_founded": 2023,
+    "seed_leads": "Redpoint",
+    "current_valuation_billion": 3.0,
+    "category": "Model"
+  },
+  {
+    "company_name": "Abridge",
+    "year_founded": 2018,
+    "seed_leads": "Pillar VC",
+    "current_valuation_billion": 2.8,
+    "category": "App"
+  },
+  {
+    "company_name": "Intelligence",
+    "year_founded": 2024,
+    "seed_leads": "Thrive",
+    "current_valuation_billion": 2.4,
+    "category": "Robotics"
+  },
+  {
+    "company_name": "Mercor",
+    "year_founded": 2023,
+    "seed_leads": "GC",
+    "current_valuation_billion": 2.0,
+    "category": "Infra"
+  },
+  {
+    "company_name": "Company",
+    "year_founded": 2024,
+    "seed_leads": "NFDG",
+    "current_valuation_billion": 2.0,
+    "category": "Robotics"
+  },
+  {
+    "company_name": "Writer",
+    "year_founded": 2020,
+    "pivot_year": 2022,
+    "seed_leads": "Upfront",
+    "current_valuation_billion": 1.9,
+    "category": "App"
+  },
+  {
+    "company_name": "Hippocratic AI",
+    "year_founded": 2023,
+    "seed_leads": "GC / a16z",
+    "current_valuation_billion": 1.6,
+    "category": "App"
+  },
+  {
+    "company_name": "Etched",
+    "year_founded": 2022,
+    "seed_leads": "Primary",
+    "current_valuation_billion": 1.6,
+    "category": "Infra"
+  },
+  {
+    "company_name": "Decagon",
+    "year_founded": 2023,
+    "seed_leads": "a* / a16z",
+    "current_valuation_billion": 1.5,
+    "category": "App"
+  },
+  {
+    "company_name": "AI21 Labs",
+    "year_founded": 2017,
+    "seed_leads": "Pitango",
+    "current_valuation_billion": 1.4,
+    "category": "Infra"
+  },
+  {
+    "company_name": "Snorkel AI",
+    "year_founded": 2019,
+    "seed_leads": "Greylock",
+    "current_valuation_billion": 1.3,
+    "category": "Infra"
+  },
+  {
+    "company_name": "Sesame",
+    "year_founded": 2023,
+    "seed_leads": "a16z",
+    "current_valuation_billion": 1.3,
+    "category": "App"
+  },
+  {
+    "company_name": "EverUp",
+    "year_founded": 2019,
+    "pivot_year": 2023,
+    "seed_leads": "NFX",
+    "current_valuation_billion": 1.1,
+    "category": "App"
+  },
+  {
+    "company_name": "Character AI",
+    "year_founded": 2021,
+    "seed_leads": "a16z",
+    "current_valuation_billion": 1.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Scale",
+    "year_founded": 2023,
+    "seed_leads": "Lux Capital",
+    "current_valuation_billion": 1.0,
+    "category": "Infra"
+  },
+  {
+    "company_name": "Owner",
+    "year_founded": 2018,
+    "pivot_year": 2023,
+    "seed_leads": "Redpoint",
+    "current_valuation_billion": 1.0,
+    "category": "App"
+  },
+  {
+    "company_name": "Parloa",
+    "year_founded": 2022,
+    "seed_leads": "Senovo",
+    "current_valuation_billion": 1.0,
+    "category": "App"
+  },
+  {
+    "company_name": "World Labs",
+    "year_founded": 2024,
+    "seed_leads": "a16z / Radical",
+    "current_valuation_billion": 1.0,
+    "category": "Infra"
+  }
+] 

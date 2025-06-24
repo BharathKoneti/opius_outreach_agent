@@ -1,0 +1,23 @@
+node_modules
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Token storage (contains sensitive data)
+.tokens.json
+packages/backend/.tokens.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+packages/backend/twitter-status.sh
+packages/backend/setup-twitter.sh
+packages/backend/restart-with-permanent-tokens.sh
+packages/backend/tokens.json
+packages/backend/save-current-tokens.sh

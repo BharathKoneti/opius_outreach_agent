@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter API Test</title>
+</head>
+<body>
+    <h1>Twitter API Test</h1>
+    <div>
+        <h2>Post Tweet</h2>
+        <textarea id="tweetContent" placeholder="Enter tweet content..." rows="3" cols="50">🎉 Testing Twitter integration via Playwright! This tweet will be posted and then deleted automatically. #TwitterAPI #Testing</textarea><br><br>
+        <button onclick="postTweet()">Post Tweet</button>
+        <div id="postResult"></div>
+    </div>
+    
+    <div>
+        <h2>Delete Tweet</h2>
+        <input type="text" id="tweetId" placeholder="Tweet ID to delete" style="width: 300px;">
+        <button onclick="deleteTweet()">Delete Tweet</button>
+        <div id="deleteResult"></div>
+    </div>
+
+    <script>
+        async function postTweet() {
+            const content = document.getElementById('tweetContent').value;
+            const resultDiv = document.getElementById('postResult');
+            
+            try {
+                const response = await fetch('/api/social/twitter/post', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ content: content })
+                });
+                
+                const result = await response.json();
+                resultDiv.innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+                
+                if (result.success && result.data.postId) {
+                    document.getElementById('tweetId').value = result.data.postId;
+                }
+            } catch (error) {
+                resultDiv.innerHTML = '<div style="color: red;">Error: ' + error.message + '</div>';
+            }
+        }
+        
+        async function deleteTweet() {
+            const tweetId = document.getElementById('tweetId').value;
+            const resultDiv = document.getElementById('deleteResult');
+            
+            if (!tweetId) {
+                resultDiv.innerHTML = '<div style="color: red;">Please enter a tweet ID</div>';
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/api/social/twitter/post/${tweetId}`, {
+                    method: 'DELETE'
+                });
+                
+                const result = await response.json();
+                resultDiv.innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+            } catch (error) {
+                resultDiv.innerHTML = '<div style="color: red;">Error: ' + error.message + '</div>';
+            }
+        }
+    </script>
+</body>
+</html> 
