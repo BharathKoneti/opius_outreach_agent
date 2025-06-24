@@ -5,7 +5,7 @@
 
 **Target**: CTOs, VP Engineering, Startup Founders, Technical Co-founders, Product Managers, Digital Transformation Leaders
 **Platform**: LinkedIn (using connection invitations with personalized notes)
-**Strategy**: Focus on 2nd degree connections for better response rates, avoid InMail to save credits
+**Strategy**: Prioritize high-quality companies and decision makers regardless of connection degree, avoid InMail to save credits
 
 ## Browser Automation Setup
 **IMPORTANT**: This campaign uses Playwright MCP for browser automation. The AI agent will:
@@ -90,9 +90,10 @@ Use LinkedIn search with these terms targeting decision makers:
 
 ### Step 2: Target Selection Criteria
 **Prioritize in this order:**
-1. **2nd degree connections** (highest priority - better response rates)
-2. **1st degree connections** (if available)
-3. **3rd+ degree connections** (only if no better options)
+1. **High-quality companies** (funded, growing, strong tech teams - regardless of connection degree)
+2. **Decision-maker authority** (CTO, VP Engineering, Founder with clear tech purchasing power)
+3. **Company-market fit** (50-500 employees, active development, funded/revenue-generating)
+4. **Connection degree preference** (2nd degree preferred when quality is equal, but don't skip great 1st or 3rd+ degree prospects)
 
 **MANDATORY CUSTOMER FIT REQUIREMENTS:**
 - **Decision-maker**: CTO, VP Engineering, or similar with authority over technology purchases
@@ -167,8 +168,9 @@ Use LinkedIn search with these terms targeting decision makers:
    - Check their location (US/Canada for initial focus)
    - Ensure company operates in markets we can serve
 8. **Connection Quality**:
-   - Review mutual connections (if 2nd degree)
+   - Review mutual connections (if 2nd degree) - helpful but not required
    - Check if mutual connections are relevant to our industry
+   - **Don't skip high-quality prospects due to connection degree** - company quality trumps connection level
 
 **Disqualification Criteria:**
 - **PRIMARY**: No evidence of funding or revenue (unfunded early startups can't afford $500-2000/month)
