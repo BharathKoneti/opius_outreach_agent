@@ -95,7 +95,10 @@ Use LinkedIn search with these terms targeting decision makers:
 3. **3rd+ degree connections** (only if no better options)
 
 **MANDATORY CUSTOMER FIT REQUIREMENTS:**
-- **Company Type**: Technology companies, SaaS, software development, digital products
+- **Decision-maker**: CTO, VP Engineering, or similar with authority over technology purchases
+- **Company type**: Technology/SaaS/software/digital product company (not solo consultancy or large enterprise)
+- **Team evidence**: Explicit or strong evidence of a sizable engineering/product team (multiple engineers, not just the founder)
+- **Clear, public evidence of external funding**: Company must have verifiable evidence of VC/angel investment, accelerator/incubator participation, or a funding round (profile, company page, or news). If in stealth/early-stage, there must be a direct mention of investor backing or accelerator/incubator. If no such evidence, SKIP outreach.
 - **Development Needs**: Evidence of active software development (engineering team, product releases)
 - **Decision Making Role**: Title indicates they make or influence technology purchasing decisions
 - **Company Growth Stage**: Series A to Series B, or established companies with scaling challenges
