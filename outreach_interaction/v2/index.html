@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opius AI Agent Workspace v2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div id="workspace-container">
+        <div id="three-container">
+            <div id="chat-bubbles"></div>
+            <div id="holographic-displays"></div>
+            <canvas id="particle-canvas"></canvas>
+        </div>
+        
+        <div id="side-panel">
+            <div class="panel-header">
+                <h2>Opius AI Outreach Lab</h2>
+                <p>Agent Log #027 — Target: <span id="vc-name">[VC Name]</span></p>
+                <div class="time-display">
+                    <span id="time">09:00 AM</span>
+                    <button id="toggle-day-night" class="time-toggle">🌙</button>
+                </div>
+            </div>
+
+            <div id="controls">
+                <div class="vc-selector-section">
+                    <h3>Select Your Target VC</h3>
+                    <div class="vc-grid">
+                        <div class="vc-card" data-vc="marc_andreessen">
+                            <div class="vc-avatar">MA</div>
+                            <h4>Marc Andreessen</h4>
+                            <p>a16z</p>
+                            <span class="vc-tag">Tweetstorm Master</span>
+                        </div>
+                        <div class="vc-card" data-vc="paul_graham">
+                            <div class="vc-avatar">PG</div>
+                            <h4>Paul Graham</h4>
+                            <p>Y Combinator</p>
+                            <span class="vc-tag">Essay Writer</span>
+                        </div>
+                        <div class="vc-card" data-vc="sam_altman">
+                            <div class="vc-avatar">SA</div>
+                            <h4>Sam Altman</h4>
+                            <p>OpenAI</p>
+                            <span class="vc-tag">AI Prophet</span>
+                        </div>
+                        <div class="vc-card" data-vc="naval_ravikant">
+                            <div class="vc-avatar">NR</div>
+                            <h4>Naval Ravikant</h4>
+                            <p>AngelList</p>
+                            <span class="vc-tag">Philosopher</span>
+                        </div>
+                        <div class="vc-card" data-vc="reid_hoffman">
+                            <div class="vc-avatar">RH</div>
+                            <h4>Reid Hoffman</h4>
+                            <p>Greylock</p>
+                            <span class="vc-tag">Network Builder</span>
+                        </div>
+                        <div class="vc-card" data-vc="peter_thiel">
+                            <div class="vc-avatar">PT</div>
+                            <h4>Peter Thiel</h4>
+                            <p>Founders Fund</p>
+                            <span class="vc-tag">Contrarian</span>
+                        </div>
+                        <div class="vc-card" data-vc="mary_meeker">
+                            <div class="vc-avatar">MM</div>
+                            <h4>Mary Meeker</h4>
+                            <p>Bond Capital</p>
+                            <span class="vc-tag">Data Queen</span>
+                        </div>
+                        <div class="vc-card" data-vc="vinod_khosla">
+                            <div class="vc-avatar">VK</div>
+                            <h4>Vinod Khosla</h4>
+                            <p>Khosla Ventures</p>
+                            <span class="vc-tag">Impossible Ideas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="selected-vc-section" style="display: none;">
+                    <div class="selected-vc-header">
+                        <h3>Preparing pitch for <span id="selected-vc-name"></span></h3>
+                        <button id="change-vc" class="link-btn">Change VC</button>
+                    </div>
+                    
+                    <div class="quick-customize">
+                        <div class="input-row">
+                            <input type="text" id="startup-input" placeholder="Your startup name" value="Opius AI" />
+                            <input type="text" id="hook-input" placeholder="Your one-liner" value="AI agents that actually ship" />
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="start-pitch" class="control-btn primary large">
+                            <span class="btn-icon">🚀</span>
+                            Start Pitch Simulation
+                        </button>
+                    </div>
+
+                    <div class="playback-controls" style="display: none;">
+                        <button id="pause-conversation" class="control-btn">⏸</button>
+                        <button id="reset-conversation" class="control-btn">↺</button>
+                        <div class="speed-control-mini">
+                            <input type="range" id="speed-slider" min="0.5" max="2" step="0.1" value="1">
+                            <span id="speed-value">1x</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-controls">
+                    <button class="view-btn active" data-preset="overview">
+                        <span class="view-icon">🏢</span>
+                        Office
+                    </button>
+                    <button class="view-btn" data-preset="cinematic">
+                        <span class="view-icon">🎬</span>
+                        Cinematic
+                    </button>
+                    <button id="toggle-day-night" class="view-btn">
+                        <span class="view-icon">🌙</span>
+                        <span>Night</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="agent-monitor">
+                <h3>Agent Status</h3>
+                <div class="agent-list">
+                    <div class="agent-item" id="agent1-status">
+                        <div class="agent-indicator"></div>
+                        <div class="agent-info">
+                            <strong>Agent 1</strong> - Lead Strategist
+                            <span class="status-text">Ready</span>
+                            <div class="agent-metrics">
+                                <span class="metric">CPU: <span class="cpu-value">12%</span></span>
+                                <span class="metric">Tasks: <span class="task-value">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-item" id="agent2-status">
+                        <div class="agent-indicator"></div>
+                        <div class="agent-info">
+                            <strong>Agent 2</strong> - Research Analyst
+                            <span class="status-text">Ready</span>
+                            <div class="agent-metrics">
+                                <span class="metric">CPU: <span class="cpu-value">8%</span></span>
+                                <span class="metric">Tasks: <span class="task-value">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-item" id="agent3-status">
+                        <div class="agent-indicator"></div>
+                        <div class="agent-info">
+                            <strong>Agent 3</strong> - Creative Director
+                            <span class="status-text">Ready</span>
+                            <div class="agent-metrics">
+                                <span class="metric">CPU: <span class="cpu-value">10%</span></span>
+                                <span class="metric">Tasks: <span class="task-value">0</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dialogue-log">
+                <h3>Conversation Log</h3>
+                <div class="dialogue-content"></div>
+            </div>
+
+            <div id="mini-map">
+                <canvas id="minimap-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script-working.js"></script>
+</body>
+</html>

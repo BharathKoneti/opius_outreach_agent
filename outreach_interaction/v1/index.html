@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opius AI Agent Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div id="workspace-container">
+        <div id="three-container">
+            <div id="chat-bubbles"></div>
+        </div>
+        
+        <div id="side-panel">
+            <div class="panel-header">
+                <h2>Opius AI Outreach Lab</h2>
+                <p>Agent Log #027 — Target: <span id="vc-name">[VC Name]</span></p>
+            </div>
+
+            <div id="controls">
+                <div class="control-group">
+                    <button id="start-conversation" class="control-btn primary">▶ Start</button>
+                    <button id="pause-conversation" class="control-btn">⏸ Pause</button>
+                    <button id="reset-conversation" class="control-btn">↺ Reset</button>
+                </div>
+                
+                <div class="personalization">
+                    <h3>Customize Outreach</h3>
+                    <div class="input-group">
+                        <label>VC Name</label>
+                        <input type="text" id="vc-input" placeholder="Enter VC name" />
+                    </div>
+                    <div class="input-group">
+                        <label>Portfolio Company</label>
+                        <input type="text" id="portfolio-input" placeholder="Enter portfolio company" />
+                    </div>
+                    <div class="input-group">
+                        <label>Fun Fact/Tweet</label>
+                        <input type="text" id="fact-input" placeholder="Enter fact or tweet" />
+                    </div>
+                    <div class="input-group">
+                        <label>Tone</label>
+                        <select id="tone-select">
+                            <option value="devtools">DevTools</option>
+                            <option value="ai-infra">AI Infrastructure</option>
+                            <option value="enterprise">Enterprise</option>
+                            <option value="edgy">Edgy Humor</option>
+                        </select>
+                    </div>
+                    <button id="update-script" class="control-btn primary">Apply Changes</button>
+                </div>
+            </div>
+
+            <div id="agent-monitor">
+                <h3>Agent Status</h3>
+                <div class="agent-list">
+                    <div class="agent-item" id="agent1-status">
+                        <div class="agent-indicator"></div>
+                        <div class="agent-info">
+                            <strong>Agent 1</strong> - Lead Strategist
+                            <span class="status-text">Ready</span>
+                        </div>
+                    </div>
+                    <div class="agent-item" id="agent2-status">
+                        <div class="agent-indicator"></div>
+                        <div class="agent-info">
+                            <strong>Agent 2</strong> - Research Analyst
+                            <span class="status-text">Ready</span>
+                        </div>
+                    </div>
+                    <div class="agent-item" id="agent3-status">
+                        <div class="agent-indicator"></div>
+                        <div class="agent-info">
+                            <strong>Agent 3</strong> - Creative Director
+                            <span class="status-text">Ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dialogue-log">
+                <h3>Conversation Log</h3>
+                <div class="dialogue-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

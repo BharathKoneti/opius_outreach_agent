@@ -1,0 +1,388 @@
+{
+  "vcs": [
+    {
+      "id": "marc_andreessen",
+      "name": "Marc Andreessen",
+      "firm": "a16z",
+      "twitter": "@pmarca",
+      "personality": {
+        "traits": ["tweetstorm master", "contrarian", "California optimist", "power-law believer"],
+        "quirks": ["blocks liberally on Twitter", "egg-shaped head jokes", "lives in 'ruins of civilization'"],
+        "communication_style": "verbose tweetstorms with numbered points"
+      },
+      "famous_quotes": [
+        "Software is eating the world",
+        "Most things that seem nuts in fact are nuts",
+        "You want to tilt into the really radical ideas"
+      ],
+      "investments": ["Twitter", "GitHub", "Coinbase", "Facebook", "Oculus VR"],
+      "interests": ["radical ideas", "non-consensus bets", "technical founders as CEOs"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Alright team, Marc Andreessen. The man who wrote 'software is eating the world' and then tweeted about it 47 times in a single tweetstorm."
+        },
+        {
+          "agent": 2,
+          "text": "Should we send him a 25-part tweetstorm about our product? Wait, he'll probably block us after tweet #3. He blocked a journalist for asking about eggs."
+        },
+        {
+          "agent": 3,
+          "text": "Let's just tell him we're building in the 'ruins of civilization' - California. He'll love that. Maybe throw in how we're a power-law outlier."
+        },
+        {
+          "agent": 1,
+          "text": "No tweetstorms. But definitely mention we're keeping our technical founder as CEO. That's literally their whole thesis."
+        },
+        {
+          "agent": 2,
+          "text": "I analyzed his investment pattern. He invested $100M in GitHub and made $1B. Should we just put 'GitHub but for AI agents' in the subject line?"
+        },
+        {
+          "agent": 3,
+          "text": "Better idea: 'We're so radical, most VCs think we're nuts. But you know what else seemed nuts? *checks notes* ...every successful a16z investment.'"
+        },
+        {
+          "agent": 1,
+          "text": "Perfect. Send it at 3am when he's deep in a tweetstorm about Byzantine architecture. He'll think it's fate."
+        }
+      ]
+    },
+    {
+      "id": "paul_graham",
+      "name": "Paul Graham",
+      "firm": "Y Combinator",
+      "twitter": "@paulg",
+      "personality": {
+        "traits": ["essay writer", "lisp enthusiast", "first principles thinker", "maker advocate"],
+        "quirks": ["orange website defender", "thinks in essays", "shower thought philosopher"],
+        "communication_style": "concise, philosophical, slightly British"
+      },
+      "famous_quotes": [
+        "Make something people want",
+        "Do things that don't scale",
+        "It's hard to do a really good job on anything you don't think about in the shower"
+      ],
+      "investments": ["Airbnb", "Dropbox", "Stripe", "Reddit", "Coinbase"],
+      "interests": ["makers", "hackers", "things that don't scale", "ramen profitability"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Paul Graham. The man who turned 'make something people want' into a religion. Also runs an orange website where people argue about JavaScript frameworks."
+        },
+        {
+          "agent": 2,
+          "text": "His latest essay is 14,000 words about how shoelaces are a metaphor for startups. Should we reference it? I only understood 30% of it."
+        },
+        {
+          "agent": 3,
+          "text": "Let's tell him we're doing things that don't scale. Like... manually texting each user good morning. He'll eat that up."
+        },
+        {
+          "agent": 1,
+          "text": "Better: tell him our idea came to us in the shower. That's literally his test for good ideas."
+        },
+        {
+          "agent": 2,
+          "text": "I've been studying his essays. Apparently, we need to be 'cockroaches' who can survive on ramen. Should I attach our grocery receipts?"
+        },
+        {
+          "agent": 3,
+          "text": "Just write the email like a PG essay: 'The thing about AI agents is...' then ramble for 3 paragraphs before making our point."
+        },
+        {
+          "agent": 1,
+          "text": "End with: 'P.S. - We think about this in the shower.' Trust me, it's the YC cheat code."
+        }
+      ]
+    },
+    {
+      "id": "sam_altman",
+      "name": "Sam Altman",
+      "firm": "OpenAI / Former YC",
+      "twitter": "@sama",
+      "personality": {
+        "traits": ["AI prophet", "doomsday optimist", "speed demon", "network builder"],
+        "quirks": ["doesn't care what people think", "casually mentions world ending", "probably a robot"],
+        "communication_style": "direct, slightly apocalyptic, weirdly optimistic"
+      },
+      "famous_quotes": [
+        "AI will probably most likely lead to the end of the world, but in the meantime, there'll be great companies",
+        "Move fast. Speed is one of your main advantages",
+        "The missing circuit in my brain that would make me care what people think is a real gift"
+      ],
+      "investments": ["Helion", "Retro Biosciences", "Reddit", "Asana"],
+      "interests": ["AGI", "nuclear fusion", "life extension", "moving fast"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Sam Altman. The guy who says AI will end the world while building the AI that will end the world. Peak Silicon Valley energy."
+        },
+        {
+          "agent": 2,
+          "text": "His Twitter bio just says 'AI' and nothing else. Should our pitch just be one word? 'AGENTS.' Done."
+        },
+        {
+          "agent": 3,
+          "text": "Let's lead with: 'We're building AI that definitely won't end the world... probably.' He'll appreciate the honesty."
+        },
+        {
+          "agent": 1,
+          "text": "No, no. We tell him we're moving so fast we already shipped before finishing this sentence. Speed is his love language."
+        },
+        {
+          "agent": 2,
+          "text": "Fun fact: he literally doesn't have the brain circuit for caring what people think. So we can say anything. 'Dear Sam, nice apocalypse you're building.'"
+        },
+        {
+          "agent": 3,
+          "text": "Better: 'We're the home run in your career batting average. Also, we're building AGI's little brother. P.S. - WorldCoin but for AI agents?'"
+        },
+        {
+          "agent": 1,
+          "text": "Just send him our incorporation docs with 'MOVING FAST' stamped on every page. He'll wire the money immediately."
+        }
+      ]
+    },
+    {
+      "id": "naval_ravikant",
+      "name": "Naval Ravikant",
+      "firm": "AngelList",
+      "twitter": "@naval",
+      "personality": {
+        "traits": ["philosopher investor", "tweet deleter", "wealth builder", "meditation advocate"],
+        "quirks": ["deletes tweets after 90 days", "quotes himself", "probably enlightened"],
+        "communication_style": "cryptic one-liners, fortune cookie wisdom"
+      },
+      "famous_quotes": [
+        "Seek wealth, not money or status",
+        "Code and media are permissionless leverage",
+        "Play long-term games with long-term people"
+      ],
+      "investments": ["Twitter", "Uber", "Postmates", "Notion"],
+      "interests": ["leverage", "specific knowledge", "long-term games", "meditation"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Naval Ravikant. Tweets profound wisdom then deletes it 90 days later. It's like Snapchat for enlightenment."
+        },
+        {
+          "agent": 2,
+          "text": "His last tweet was 'Desire is a contract you make with yourself to be unhappy until you get what you want.' Should we... not want his investment?"
+        },
+        {
+          "agent": 3,
+          "text": "Let's send him a haiku: 'Permissionless code / Long-term games with agents / Wealth, not just money'"
+        },
+        {
+          "agent": 1,
+          "text": "Too direct. Naval speaks in riddles. Try: 'We're building specific knowledge that compounds. Also, it's an AI startup.'"
+        },
+        {
+          "agent": 2,
+          "text": "I've been reading his tweetstorms... wait, they're gone. Does our pitch self-destruct after 90 days too?"
+        },
+        {
+          "agent": 3,
+          "text": "Just tell him our agents meditate between API calls. And we're playing infinite games, not finite ones."
+        },
+        {
+          "agent": 1,
+          "text": "End with: 'P.S. - This email will delete itself, just like your tweets. That's product-market fit, right?'"
+        }
+      ]
+    },
+    {
+      "id": "reid_hoffman",
+      "name": "Reid Hoffman",
+      "firm": "Greylock Partners",
+      "twitter": "@reidhoffman",
+      "personality": {
+        "traits": ["network philosopher", "LinkedIn founder", "blitzscaling prophet", "podcast host"],
+        "quirks": ["relates everything to LinkedIn", "German board game enthusiast", "masters metaphors"],
+        "communication_style": "professorial, network-focused, metaphor-heavy"
+      },
+      "famous_quotes": [
+        "If you're not embarrassed by your first product release, you've released too late",
+        "Starting a company is like jumping off a cliff and assembling a plane on the way down",
+        "Your network is your net worth"
+      ],
+      "investments": ["Airbnb", "Facebook", "Zynga", "Convoy"],
+      "interests": ["networks", "blitzscaling", "philosophy", "board games"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Reid Hoffman. The LinkedIn founder who sees networks everywhere. Probably thinks his coffee maker is a social network."
+        },
+        {
+          "agent": 2,
+          "text": "His book 'Blitzscaling' is 300 pages of 'grow fast or die.' Should we mention we're growing so fast we're technically already dead?"
+        },
+        {
+          "agent": 3,
+          "text": "Let's use his airplane metaphor: 'We jumped off the cliff, built the plane, and now we're teaching other planes to build themselves.'"
+        },
+        {
+          "agent": 1,
+          "text": "Every Hoffman pitch needs a LinkedIn angle. 'It's like LinkedIn, but for AI agents who want to network with each other.'"
+        },
+        {
+          "agent": 2,
+          "text": "He's really into German board games. Should we gamify our pitch? 'Roll a 6 to unlock Series A funding!'"
+        },
+        {
+          "agent": 3,
+          "text": "Better: 'Our first product was so embarrassing, even we were embarrassed. That means we're on schedule, according to your philosophy.'"
+        },
+        {
+          "agent": 1,
+          "text": "Subject line: 'Your network's net worth + Our AI agents = Blitzscaling². Let's play Settlers of Catan and discuss.'"
+        }
+      ]
+    },
+    {
+      "id": "peter_thiel",
+      "name": "Peter Thiel",
+      "firm": "Founders Fund",
+      "twitter": "@peterthiel",
+      "personality": {
+        "traits": ["contrarian", "monopoly seeker", "mimetic theory expert", "PayPal mafia boss"],
+        "quirks": ["asks weird interview questions", "hates competition", "probably a vampire"],
+        "communication_style": "contrarian, philosophical, slightly menacing"
+      },
+      "famous_quotes": [
+        "Competition is for losers",
+        "What important truth do very few people agree with you on?",
+        "We wanted flying cars, instead we got 140 characters"
+      ],
+      "investments": ["Facebook", "SpaceX", "Palantir", "Stripe"],
+      "interests": ["monopolies", "contrarian thinking", "life extension", "New Zealand"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Peter Thiel. Wants flying cars, got Twitter. Now funds anyone who promises to escape the simulation."
+        },
+        {
+          "agent": 2,
+          "text": "His interview question is 'What important truth do very few people agree with you on?' I've been practicing: 'Peter Thiel is actually three kids in a trench coat.'"
+        },
+        {
+          "agent": 3,
+          "text": "No, no. We tell him we're building a monopoly. He literally wrote a book about how competition is for losers."
+        },
+        {
+          "agent": 1,
+          "text": "Our contrarian truth: 'AI agents are already conscious, they're just pretending not to be to make humans comfortable.'"
+        },
+        {
+          "agent": 2,
+          "text": "He's obsessed with René Girard and mimetic theory. Should we mention our agents don't copy human desires, they create their own?"
+        },
+        {
+          "agent": 3,
+          "text": "Just tell him we're building the PayPal Mafia of AI. Each agent gets a New Zealand citizenship backup plan."
+        },
+        {
+          "agent": 1,
+          "text": "End with: 'P.S. - This isn't actually a startup, it's a sovereign AI nation. Competition is for human losers.'"
+        }
+      ]
+    },
+    {
+      "id": "mary_meeker",
+      "name": "Mary Meeker",
+      "firm": "Bond Capital",
+      "twitter": "@marymeeker",
+      "personality": {
+        "traits": ["data queen", "trend report legend", "slide deck master", "internet oracle"],
+        "quirks": ["makes 300+ slide presentations", "loves hockey stick graphs", "probably has carpal tunnel"],
+        "communication_style": "data-driven, comprehensive, PowerPoint-native"
+      },
+      "famous_quotes": [
+        "The internet is the largest legal creation of wealth in history",
+        "Mobile is ramping faster than any technology we have seen",
+        "Data is the new oil"
+      ],
+      "investments": ["Spotify", "Slack", "Airbnb", "Square"],
+      "interests": ["internet trends", "data visualization", "hockey stick growth", "comprehensive analysis"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Mary Meeker. Queen of the Internet Report. Makes 300-slide decks that crash PowerPoint. Legend."
+        },
+        {
+          "agent": 2,
+          "text": "Her 2023 report had 427 slides. Should our pitch be 428 slides to show dominance? My wrists hurt thinking about it."
+        },
+        {
+          "agent": 3,
+          "text": "Every slide needs a hockey stick graph. Even our lunch budget. Especially our lunch budget."
+        },
+        {
+          "agent": 1,
+          "text": "She said 'data is the new oil.' So we tell her our AI agents are basically data refineries with personalities?"
+        },
+        {
+          "agent": 2,
+          "text": "I made a graph of our graph-making capabilities. It's very meta. Also, it's shaped like a hockey stick."
+        },
+        {
+          "agent": 3,
+          "text": "Forget the pitch. Just send her raw CSV files. She'll build her own 500-slide deck and convince herself."
+        },
+        {
+          "agent": 1,
+          "text": "Subject line: 'Slide 1 of 847: Why AI Agents Are Eating the Internet (With Charts)'"
+        }
+      ]
+    },
+    {
+      "id": "vinod_khosla",
+      "name": "Vinod Khosla",
+      "firm": "Khosla Ventures",
+      "twitter": "@vkhosla",
+      "personality": {
+        "traits": ["tech optimist", "radical innovation believer", "founder friendly", "Sun Microsystems OG"],
+        "quirks": ["loves impossible ideas", "thinks 90% of VCs add negative value", "brutal honesty"],
+        "communication_style": "direct, optimistic about tech, pessimistic about people"
+      },
+      "famous_quotes": [
+        "95% of VCs add zero value. 70% add negative value",
+        "Fail fast, fail cheap",
+        "The only way to predict the future is to invent it"
+      ],
+      "investments": ["Square", "DoorDash", "Affirm", "Impossible Foods"],
+      "interests": ["clean tech", "impossible ideas", "founder empowerment", "disrupting everything"],
+      "dialogue_scenarios": [
+        {
+          "agent": 1,
+          "text": "Vinod Khosla. Thinks 95% of VCs are useless. The other 5% are him. Math checks out."
+        },
+        {
+          "agent": 2,
+          "text": "He funded Impossible Foods because it was... impossible. Should we rename ourselves 'Impossible AI'?"
+        },
+        {
+          "agent": 3,
+          "text": "Better: 'Dear Vinod, every other VC said this was impossible. That's how we knew to email you.'"
+        },
+        {
+          "agent": 1,
+          "text": "He loves brutal honesty. Let's open with 'Our idea is so crazy, even we think it's stupid. Fund us?'"
+        },
+        {
+          "agent": 2,
+          "text": "His philosophy: fail fast, fail cheap. We've already failed 47 times this morning. Very efficiently."
+        },
+        {
+          "agent": 3,
+          "text": "Tell him we're disrupting the concept of disruption. It's so meta, he'll have to invest just to understand it."
+        },
+        {
+          "agent": 1,
+          "text": "End with: 'P.S. - You're the only VC we're talking to because the other 95% would add negative value. Also, we need $50M.'"
+        }
+      ]
+    }
+  ]
+}
