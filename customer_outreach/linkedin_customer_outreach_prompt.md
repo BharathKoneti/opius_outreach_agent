@@ -1,4 +1,60 @@
-# LinkedIn Customer Outreach Campaign Prompt Template
+# LinkedIn Customer Outreach Campaign - Updated Strategy
+
+## Core Objective
+Target **20 additional prospects** (beyond existing contacts) who are current CTOs and VP Engineering at growing companies (50-200 employees) with AI/software focus, prioritizing high-quality companies over connection degree.
+
+## Updated Target Criteria (MANDATORY REQUIREMENTS)
+
+### 1. Current Active Engineering Leader (MANDATORY)
+- **Current CTO or VP Engineering** with active operational responsibilities
+- Must be currently employed in an active engineering leadership role
+- NOT advisory positions, board positions, or past roles
+- Must have decision-making authority and budget control
+
+### 2. Funding Evidence (MANDATORY) 
+- Must have clear, public evidence of:
+  - External funding or VC investment, OR
+  - Be a revenue-generating company with proven business model
+- **Exclude**: Unfunded early startups, stealth companies without investor backing
+- **Rationale**: Unfunded startups typically can't afford $500-20K+ annual commitments
+
+### 3. Company Profile
+- **Size**: Ideally 50-200 employees (sweet spot for our solution)
+- **Industry**: AI, software, fintech, healthtech, or other technology-focused companies
+- **Growth Stage**: Series A+ or established revenue-generating companies
+
+### 4. Connection Priority
+- **Updated Strategy**: Prioritize high-quality companies regardless of connection degree
+- Don't limit to 2nd degree connections - focus on company quality first
+- 2nd degree connections still preferred when available among qualified prospects
+
+## Company Exclusions
+- **Avoid these companies**: PayPal
+- **Reason**: These mega-corps have complex procurement processes and may not be ideal for our current stage
+
+## Message Templates
+
+### Template A (For VP Engineering)
+"Hi [Name], struggling with dev team scaling? Opius AI gets 80% of development done with 20% of the team using AI agents - 40-60% cost reduction, 2-3x faster delivery. See demo: https://opiusai.com/sandbox-demo/. Would love to discuss!"
+
+### Template B (For CTOs) 
+"Hi [Name], struggling with dev team scaling? Opius AI gets 80% of development done with 20% of the team using AI agents - 40-60% cost reduction, 2-3x faster delivery. See demo: https://opiusai.com/sandbox-demo/. Would love to discuss!"
+
+## Search Strategy
+1. **LinkedIn Search Terms**: "CTO startup", "VP Engineering", "Chief Technology Officer"
+2. **Qualification Process**: Carefully vet each prospect against mandatory requirements
+3. **Documentation**: Track all prospects (sent and disqualified) with detailed reasoning
+
+## Success Metrics
+- **Target**: 20 additional qualified connection requests sent
+- **Current Progress**: 5/20 sent (Shojee, Ajit, Gene, Gaya, Prasenjit)
+- **Quality over Quantity**: Ensure each prospect meets all mandatory requirements
+
+## Key Process Notes
+- Always use exact message templates (don't modify)
+- Include demo link in every message
+- Document disqualification reasons for rejected prospects
+- Commit tracking files to git for proper version control
 
 ## Campaign Overview
 **Objective**: Contact potential customers on LinkedIn to introduce Opius AI and generate leads for sales conversations.

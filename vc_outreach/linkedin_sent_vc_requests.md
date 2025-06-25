@@ -50,6 +50,8 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 22. **Nabeel Hyatt** (Spark Capital) - ⭐⭐⭐⭐⭐ EXCEPTIONAL AI/Software Investment Focus
 23. **Rick Lewis** (USVP) - ⭐⭐⭐⭐ EXCELLENT AI/Software Investment Focus
 24. **Jennifer Vancini** (Mighty Capital) - ⭐⭐⭐⭐ EXCELLENT AI/Software Investment Focus
+25. **Joanne Chen** (Foundation Capital) - ⭐⭐⭐⭐⭐ PERFECT AI FOCUS! "Investing in early stage applied AI" - Portfolio: Jasper (AI writing), Tennr (AI automation), Arcade (AI-powered) - IDEAL MATCH!
+26. **Will Hawthorne** (Sugar Capital) - ⭐⭐⭐⭐ SOLID VC PROSPECT! General Partner, 5+ years experience, active investor with board observer roles at Lvble, Reflex, Disco
 
 ### A
 - **Anup Jacob** - Managing Partner at Activate Capital
@@ -178,6 +180,16 @@ This file tracks all LinkedIn VC connection requests that have been sent. **ALWA
 - **Jacques Benkoski** - General Partner at U.S. Venture Partners - Sent - PENDING
 - **James McKee** - General Partner at Kubera Venture Capital - Sent - PENDING
 - **Jeb Miller** - General Partner at Icon Ventures - Sent - PENDING
+- **Joanne Chen** - General Partner at Foundation Capital
+  - LinkedIn: https://www.linkedin.com/in/joanne-chen-8486677/
+  - Connection: 2nd degree (via Matt Carbonara ✅, Zachary DeWitt, and 2 other mutual connections)
+  - AI Investment Focus: ⭐⭐⭐⭐⭐ **PERFECT MATCH** - "Investing in early stage applied AI" (exact title), explicit AI focus
+  - Portfolio: **OUTSTANDING AI PORTFOLIO** - Jasper (AI writing tool, seed lead), Tennr (AI automation, seed lead), Arcade (AI-powered, seed lead), Tonkean (process automation, seed lead), SafelyYou (seed lead), Fulcrum (seed lead)
+  - Date Contacted: 2025-01-27
+  - Time: 19:12
+  - Status: **PENDING** (Message sent successfully)
+  - Message: "Hi Joanne, at Opius AI we're building autonomous AI agents for software development without PMs/engineers. Planning Agent in early access, launching soon. https://opiusai.com/ https://open-vsx.org/extension/opius-ai/opius-planner-cursor Would love to stay connected!" (264 characters)
+  - Notes: **EXCEPTIONAL CANDIDATE** - General Partner at Foundation Capital, explicit "Investing in early stage applied AI" focus, portfolio includes multiple AI unicorns (Jasper), board positions at AI companies, recent content on "A System of Agents brings Service-as-Software to life" - DIRECTLY RELEVANT to Opius AI's mission. 16,459 followers, Premium member, UC Berkeley EECS + Chicago Booth MBA, TEDx speaker on AI investing.
 
 ### M
 - **Mark Crane** - Partner at General Catalyst - Sent - PENDING

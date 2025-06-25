@@ -232,7 +232,8 @@ Use LinkedIn search with these terms:
 **Character limit**: 300 characters (aim for 263-268 characters)
 
 ```
-Hi [NAME], at Opius AI we're building autonomous AI agents for software development without PMs/engineers. Planning Agent in early access, launching soon. https://opiusai.com/ https://open-vsx.org/extension/opius-ai/opius-planner-cursor Would love to stay connected!
+Hi [NAME], Opius AI deploys teams of autonomous AI agents that build complete software applications with minimal human oversight. Companies significantly reduce dev costs. Check our demo: https://opiusai.com/sandbox-demo/. Would love to stay connected!
+
 ```
 
 **Template Variables:**
